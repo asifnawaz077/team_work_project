@@ -6,7 +6,7 @@ class CustomText extends StatelessWidget {
   final double size;               // 👈 for fontSize
   final FontWeight weight;         // 👈 for fontWeight
   final Color? color;
-  final TextStyle Function({ // 👈 ye important hai
+  final TextStyle Function({
   double? fontSize,
   FontWeight? fontWeight,
   Color? color,
@@ -15,6 +15,10 @@ class CustomText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(label);
+    return Text(label, style: fontType(
+      fontSize: size,
+      fontWeight: weight,
+      color: color ?? Colors.black,
+    ),);
   }
 }

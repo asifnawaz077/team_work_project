@@ -12,6 +12,25 @@ class LoginView1 extends StatefulWidget {
 class _LoginView1State extends State<LoginView1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          SizedBox(
+            height: 150,
+          ),
+          Center(
+              child: Image.asset(
+            'assets/splash.img.png',
+          )),
+          CustomText(
+            label: 'Protect your legacy',
+            size: 17.0,
+            weight: FontWeight.bold,
+            fontType: GoogleFonts.jost,
+            color: Colors.black,
+          )
+        ],
+      ),
+    );
   }
 }
