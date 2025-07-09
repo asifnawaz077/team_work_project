@@ -18,12 +18,13 @@ class _LoginView1State extends State<LoginView1> {
       body: Column(
         children: [
           SizedBox(
-            height: 90,
+            height: 170,
           ),
           Center(
               child: Image.asset(
             'assets/splash.img.png',
           )),
+          SizedBox(height: 35,),
           CustomText(
             label: 'Protect your legacy',
             size: 17.0,
@@ -32,7 +33,7 @@ class _LoginView1State extends State<LoginView1> {
             color: Colors.black,
           ),
           SizedBox(
-            height: 30,
+            height: 70,
           ),
           CustomText(
             label: 'Welcome to Solvbox',
@@ -42,7 +43,7 @@ class _LoginView1State extends State<LoginView1> {
             color: Color(0xff000000),
           ),
           SizedBox(
-            height: 20,
+            height: 30,
           ),
           Center(
             child: BlueButtonWidget(
@@ -59,7 +60,7 @@ class _LoginView1State extends State<LoginView1> {
               text: 'Continue as problem seeker',
             ),
           ),
-          Spacer(),
+          SizedBox(height: 180,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

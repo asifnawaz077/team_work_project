@@ -30,55 +30,69 @@ class _LoginView3State extends State<LoginView3> {
         centerTitle: true,
       ),
       body: Center(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 50,
-            ),
-            CustomTextField(
-              hintText: 'alexalexander@gmail.com',
-              controller: emailController,
-              labelText: 'Email',
-            ),
-            SizedBox(
-              height: 35,
-            ),
-            CustomTextField(
-              hintText: '********',
-              controller: passwordController,
-              labelText: 'Password',
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            BlueButtonWidget(onPressed: () {}, text: 'Log in'),
-            SizedBox(
-              height: 30,
-            ),
-            InkWell(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView4()));
-              },
-              child: CustomText(
-                  label: 'Forgot password?',
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 80,
+              ),
+              Row(
+                children: [
+                  SizedBox(width: 20,),
+                  CustomText(label: 'Email', size: 16, weight: FontWeight.w400, fontType: GoogleFonts.jost),
+                ],
+              ),
+              SizedBox(height: 5,),
+              CustomTextField(
+                hintText: 'alexalexander@gmail.com',
+                controller: emailController,
+              ),
+              SizedBox(
+                height: 35,
+              ),
+              Row(
+                children: [
+                  SizedBox(width: 20,),
+                  CustomText(label: 'Password', size: 16, weight: FontWeight.w400, fontType: GoogleFonts.jost),
+                ],
+              ),
+              SizedBox(height: 5,),
+              CustomTextField(
+                hintText: '********',
+                controller: passwordController,
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              BlueButtonWidget(onPressed: () {}, text: 'Log in'),
+              SizedBox(
+                height: 30,
+              ),
+              InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView4()));
+                },
+                child: CustomText(
+                    label: 'Forgot password?',
+                    size: 14,
+                    weight: FontWeight.w600,
+                    fontType: GoogleFonts.jost),
+              ),
+              SizedBox(
+                height: 245,
+              ),
+              CustomText(
+                  label: 'By using Solvbox, you agree to the',
                   size: 14,
                   weight: FontWeight.w600,
-                  fontType: GoogleFonts.jost),
-            ),
-            SizedBox(
-              height: 190,
-            ),
-            CustomText(
-                label: 'By using Solvbox, you agree to the',
-                size: 14,
-                weight: FontWeight.w600,
-                fontType: GoogleFonts.roboto),
-            CustomText(
-                label: 'Terms and Privacy Policy.',
-                size: 14,
-                weight: FontWeight.w600,
-                fontType: GoogleFonts.roboto),
-          ],
+                  fontType: GoogleFonts.roboto),
+              CustomText(
+                  label: 'Terms and Privacy Policy.',
+                  size: 14,
+                  weight: FontWeight.w600,
+                  fontType: GoogleFonts.roboto),
+            ],
+          ),
         ),
       ),
     );
