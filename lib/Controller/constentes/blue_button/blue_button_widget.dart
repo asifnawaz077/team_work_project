@@ -12,11 +12,11 @@ class BlueButtonWidget extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        height: 57,
-        width: 320,
+        height: 60,
+        width: 343,
         decoration: BoxDecoration(
           color: AppColor.btnColorBlue,
-          borderRadius: BorderRadius.circular(19),
+          borderRadius: BorderRadius.circular(12),
         ),
         child: Center(
           child: Text(
