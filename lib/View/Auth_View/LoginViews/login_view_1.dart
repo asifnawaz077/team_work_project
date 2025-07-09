@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:team_work_project/Controller/text_comp/text_component.dart';
 
 class LoginView1 extends StatefulWidget {
   const LoginView1({super.key});
@@ -10,6 +12,6 @@ class LoginView1 extends StatefulWidget {
 class _LoginView1State extends State<LoginView1> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return CustomText(label: 'khan', size: 16, weight: FontWeight.w600, fontType:GoogleFonts.jost);
   }
 }
