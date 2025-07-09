@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
+import 'package:team_work_project/Controller/textformfield/textform_field.dart';
+
+import '../../../Controller/text_comp/text_component.dart';
+
+class LoginView3 extends StatefulWidget {
+  const LoginView3({super.key});
+
+  @override
+  State<LoginView3> createState() => _LoginView3State();
+}
+
+class _LoginView3State extends State<LoginView3> {
+  TextEditingController emailController=TextEditingController();
+  TextEditingController passwordController=TextEditingController();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: CustomText(
+          label: 'Log into account',
+          size: 20.0,
+          weight: FontWeight.w400,
+          fontType: GoogleFonts.jost,
+          color: Color(0xff000000),
+        ),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            SizedBox(height: 50,),
+            CustomTextField(hintText: 'alexalexander@gmail.com', controller: emailController,labelText: 'Email',),
+            SizedBox(height: 35,),
+            CustomTextField(hintText: '********', controller: passwordController,labelText: 'Password',),
+            SizedBox(height: 30,),
+            BlueButtonWidget(onPressed: (){}, text: 'Log in'),
+            SizedBox(height: 30,),
+            CustomText(label: 'Forgot password?', size: 14, weight: FontWeight.w600, fontType: GoogleFonts.jost),
+            SizedBox(
+              height: 190,
+            ),
+            CustomText(
+                label: 'By using Solvbox, you agree to the',
+                size: 14,
+                weight: FontWeight.w600,
+                fontType: GoogleFonts.roboto),
+            CustomText(
+                label: 'Terms and Privacy Policy.',
+                size: 14,
+                weight: FontWeight.w600,
+                fontType: GoogleFonts.roboto),
+          ],
+        ),
+      ),
+    );
+  }
+}

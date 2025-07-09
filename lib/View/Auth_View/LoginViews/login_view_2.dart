@@ -126,6 +126,19 @@ class _LoginView2State extends State<LoginView2> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 50,
+            ),
+            CustomText(
+                label: 'By using Solvbox, you agree to the',
+                size: 14,
+                weight: FontWeight.w600,
+                fontType: GoogleFonts.roboto),
+            CustomText(
+                label: 'Terms and Privacy Policy.',
+                size: 14,
+                weight: FontWeight.w600,
+                fontType: GoogleFonts.roboto),
           ],
         ),
       ),

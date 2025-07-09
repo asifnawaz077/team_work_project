@@ -21,7 +21,7 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return
         SizedBox(
-          width: width ?? 343,
+          width: width ?? 370,
           child: TextFormField(
               controller: controller,
               obscureText: isPassword,
