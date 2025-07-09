@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_1.dart';
 import 'package:team_work_project/View/Auth_View/SignUpViews/signUp_view_1.dart';
 import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_2.dart';
+import 'package:team_work_project/View/Auth_View/Splash_View/Splash_View.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +35,6 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: SignupView1());
+        home: SplashView());
   }
 }
