@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
+import 'package:team_work_project/View/Auth_View/LoginViews/login_view_3.dart';
 
 class LoginView2 extends StatefulWidget {
   const LoginView2({super.key});
@@ -39,7 +40,9 @@ class _LoginView2State extends State<LoginView2> {
             ),
             CustomText(label: ' Lets continue', size: 16, weight: FontWeight.w400, fontType: GoogleFonts.roboto),
             SizedBox(height: 40,),
-            BlueButtonWidget(onPressed: (){}, text: 'Continue with email'),
+            BlueButtonWidget(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView3()));
+            }, text: 'Continue with email'),
             SizedBox(height: 30,),
             CustomText(label: 'or', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.roboto,color: Color(0xff605D67),),
             SizedBox(height:30),

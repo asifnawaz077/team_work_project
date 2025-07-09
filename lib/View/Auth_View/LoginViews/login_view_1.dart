@@ -69,16 +69,14 @@ class _LoginView1State extends State<LoginView1> {
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
               ),
-              GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView2()));
-                },
-                child: CustomText(
+               InkWell(
+                 onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView2()));},
+                 child: CustomText(
                     label: ' Log in',
                     size: 16,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost),
-              )
+               )
             ],
           )
         ],

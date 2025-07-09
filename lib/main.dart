@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_1.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_3.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_4.dart';
+import 'package:team_work_project/View/Auth_View/LoginViews/login_view_5.dart';
 import 'package:team_work_project/View/Auth_View/SignUpViews/signUp_view_1.dart';
 import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_2.dart';
 import 'package:team_work_project/View/Auth_View/Splash_View/Splash_View.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: LoginView4()//LoginView3()//LoginView2()//SplashView()
+        home: LoginView5()//LoginView4()//LoginView3()//LoginView2()//SplashView()
      );
   }
 }

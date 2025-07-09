@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
+import 'package:team_work_project/View/Auth_View/LoginViews/login_view_4.dart';
 
 import '../../../Controller/text_comp/text_component.dart';
 
@@ -54,11 +55,16 @@ class _LoginView3State extends State<LoginView3> {
             SizedBox(
               height: 30,
             ),
-            CustomText(
-                label: 'Forgot password?',
-                size: 14,
-                weight: FontWeight.w600,
-                fontType: GoogleFonts.jost),
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView4()));
+              },
+              child: CustomText(
+                  label: 'Forgot password?',
+                  size: 14,
+                  weight: FontWeight.w600,
+                  fontType: GoogleFonts.jost),
+            ),
             SizedBox(
               height: 190,
             ),
