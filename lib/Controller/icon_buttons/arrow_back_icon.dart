@@ -5,7 +5,7 @@ class ArrowBackIcon extends StatelessWidget {
   final VoidCallback? onPressed;
   final Color? color;
 
-  const ArrowBackIcon({super.key, required this.onPressed, this.color});
+   ArrowBackIcon({super.key, required this.onPressed, this.color,required this.icon});
 
   @override
   Widget build(BuildContext context) {

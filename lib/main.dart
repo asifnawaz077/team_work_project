@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:team_work_project/testing.dart';
+import 'package:team_work_project/View/Auth_View/LoginViews/login_view_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:testin()
+      home:LoginView1()
     );
   }
 }

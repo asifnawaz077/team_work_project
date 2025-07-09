@@ -12,6 +12,6 @@ class LoginView1 extends StatefulWidget {
 class _LoginView1State extends State<LoginView1> {
   @override
   Widget build(BuildContext context) {
-    return CustomText(label: 'khan', size: 16, weight: FontWeight.w600, fontType:GoogleFonts.jost);
+    return Scaffold();
   }
 }
