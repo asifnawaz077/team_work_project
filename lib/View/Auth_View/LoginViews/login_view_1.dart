@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+import 'package:team_work_project/View/Auth_View/LoginViews/login_view_2.dart';
 
 class LoginView1 extends StatefulWidget {
   const LoginView1({super.key});
@@ -17,7 +18,7 @@ class _LoginView1State extends State<LoginView1> {
       body: Column(
         children: [
           SizedBox(
-            height: 150,
+            height: 90,
           ),
           Center(
               child: Image.asset(
@@ -67,11 +68,17 @@ class _LoginView1State extends State<LoginView1> {
                 size: 16,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
-              ),CustomText(
-                  label: ' Log in',
-                  size: 16,
-                  weight: FontWeight.w600,
-                  fontType: GoogleFonts.jost)
+              ),
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView2()));
+                },
+                child: CustomText(
+                    label: ' Log in',
+                    size: 16,
+                    weight: FontWeight.w600,
+                    fontType: GoogleFonts.jost),
+              )
             ],
           )
         ],

@@ -4,6 +4,9 @@ import 'package:team_work_project/View/Auth_View/SignUpViews/signUp_view_1.dart'
 import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_2.dart';
 import 'package:team_work_project/View/Auth_View/Splash_View/Splash_View.dart';
 
+import 'package:team_work_project/View/Auth_View/LoginViews/login_view_2.dart';
+
+
 void main() {
   runApp(const MyApp());
 }

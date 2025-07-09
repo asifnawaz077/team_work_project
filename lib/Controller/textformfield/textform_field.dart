@@ -6,6 +6,8 @@ class CustomTextField extends StatelessWidget {
   final bool isPassword;
   final TextInputType keyboardType;
   final IconData? prefixIcon;
+  final double? width;
+  final String? labelText;
 
   CustomTextField(
       {super.key,
@@ -13,25 +15,31 @@ class CustomTextField extends StatelessWidget {
         required this.controller,
         this.isPassword = false,
         this.keyboardType = TextInputType.text,
-        this.prefixIcon,});
+        this.prefixIcon,this.width,this.labelText});
 
   @override
   Widget build(BuildContext context) {
     return
-        TextFormField(
-            controller: controller,
-            obscureText: isPassword,
-            keyboardType: keyboardType,
-            decoration: InputDecoration(
-              hintText: hintText,
-              prefixIcon: prefixIcon!=null?Icon(prefixIcon):null,
-              border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12)
-              ),
-              contentPadding: EdgeInsets.symmetric(
-                vertical: 16,
-                horizontal: 12,
-              ),
-            ));
+        SizedBox(
+          width: width ?? 343,
+          child: TextFormField(
+              controller: controller,
+              obscureText: isPassword,
+              keyboardType: keyboardType,
+              decoration: InputDecoration(
+                floatingLabelBehavior: FloatingLabelBehavior.always,
+                hintText: hintText,
+                labelText: labelText,
+                prefixIcon: prefixIcon!=null?Icon(prefixIcon):null,
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12)
+                ),
+
+                contentPadding: EdgeInsets.symmetric(
+                  vertical: 16,
+                  horizontal: 12,
+                ),
+              )),
+        );
   }
 }
