@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_2.dart';
 
 class SignupView1 extends StatelessWidget {
   const SignupView1({super.key});
@@ -9,31 +10,36 @@ class SignupView1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: CustomText(
+            label: 'Create new account',
+            size: 20,
+            weight: FontWeight.w400,
+            fontType: GoogleFonts.jost),
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             SizedBox(
-              height: 50,
+              height: 70,
             ),
             Center(
               child: CustomText(
-                  label: 'Create new account',
-                  size: 20,
+                  label: 'Begin with creating new free account.',
+                  size: 16,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.jost),
             ),
             SizedBox(
-              height: 90,
-            ),
-            CustomText(
-                label: 'Begin with creating new free account.',
-                size: 16,
-                weight: FontWeight.w400,
-                fontType: GoogleFonts.jost),
-            SizedBox(
               height: 30,
             ),
-            BlueButtonWidget(onPressed: () {}, text: 'Confirm with email'),
+            BlueButtonWidget(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignupView2()));
+                },
+                text: 'Continue with email'),
             SizedBox(
               height: 20,
             ),
