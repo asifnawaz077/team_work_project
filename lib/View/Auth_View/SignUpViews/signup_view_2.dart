@@ -4,6 +4,7 @@ import 'package:team_work_project/Controller/constentes/blue_button/blue_button_
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_3.dart';
 
 class SignupView2 extends StatelessWidget {
   SignupView2({super.key});
@@ -40,9 +41,15 @@ class SignupView2 extends StatelessWidget {
             ),
             Center(
                 child: BlueButtonWidget(
-                    onPressed: () {}, text: 'Create an account')),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignupView3()));
+                    },
+                    text: 'Create an account')),
             SizedBox(
-              height: 410,
+              height: 425,
             ),
             CustomText(
                 label: 'By using Solvbox, you agree to the',
