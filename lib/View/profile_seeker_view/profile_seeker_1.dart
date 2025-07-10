@@ -125,26 +125,164 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                   color: Color(0xff003366),
                 ),
                 InkWell(
-                    onTap: (){},
-                    child: CustomText(label: 'Reviews', size: 14, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xffC0C0C0),))
+                    onTap: () {},
+                    child: CustomText(
+                      label: 'Reviews',
+                      size: 14,
+                      weight: FontWeight.w400,
+                      fontType: GoogleFonts.jost,
+                      color: Color(0xffC0C0C0),
+                    ))
               ],
             ),
-            SizedBox(height: 18,),
+            SizedBox(
+              height: 18,
+            ),
             Row(
               children: [
-                SizedBox(width: 69,),
-                Container(height: 4.0,width: 104,decoration: BoxDecoration(
+                SizedBox(
+                  width: 69,
+                ),
+                Container(
+                  height: 4.0,
+                  width: 104,
+                  decoration: BoxDecoration(
+                      color: Color(0xff003366),
+                      borderRadius: BorderRadius.circular(2)),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Row(
+              children: [
+                IconButton(onPressed: () {}, icon: Icon(Icons.close_rounded)),
+                SizedBox(
+                  width: 95,
+                ),
+                CustomText(
+                  label: 'User Details',
+                  size: 16,
+                  weight: FontWeight.w500,
+                  fontType: GoogleFonts.jost,
+                  color: Color(0xff000E08),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Column(
+              children: [
+                ListTile(
+                  leading: Icon(
+                    Icons.account_balance,
                     color: Color(0xff003366),
-                  borderRadius: BorderRadius.circular(2)
-                ),),
-              ],
-            ),
-            SizedBox(height: 50,),
-            Row(
-              children: [
-                IconButton(onPressed: (){}, icon: Icon(Icons.close_rounded)),
-                 SizedBox(width: 95,),
-                 CustomText(label: 'User Details', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),)
+                  ),
+                  title: CustomText(
+                    label: 'Company Name',
+                    size: 14,
+                    weight: FontWeight.w500,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff000E08),
+                  ),
+                  subtitle: CustomText(
+                      label: 'Solvbox',
+                      size: 14,
+                      weight: FontWeight.w400,
+                      fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.business,
+                    color: Color(0xff003366),
+                  ),
+                  title: CustomText(
+                    label: 'Industry',
+                    size: 14,
+                    weight: FontWeight.w500,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff000E08),
+                  ),
+                  subtitle: CustomText(
+                    label: 'Designing',
+                    size: 14,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.location_on_outlined,
+                    color: Color(0xff003366),
+                  ),
+                  title: CustomText(
+                    label: 'Location',
+                    size: 14,
+                    weight: FontWeight.w500,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff000E08),
+                  ),
+                  subtitle: CustomText(
+                    label: 'Germany',
+                    size: 14,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Color(0xff003366),
+                  ),
+                  title: CustomText(
+                    label: 'Email',
+                    size: 14,
+                    weight: FontWeight.w500,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff000E08),
+                  ),
+                  subtitle: CustomText(
+                    label: 'alexalexander@gmail.com',
+                    size: 14,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Color(0xff003366),
+                  ),
+                  title: CustomText(
+                    label: 'Phone Number',
+                    size: 14,
+                    weight: FontWeight.w500,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff000E08),
+                  ),
+                  subtitle: CustomText(
+                    label: '001 123 4567',
+                    size: 14,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.language,
+                    color: Color(0xff003366),
+                  ),
+                  title: CustomText(
+                    label: 'Website',
+                    size: 14,
+                    weight: FontWeight.w500,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff000E08),
+                  ),
+                  subtitle: CustomText(
+                    label: 'Solvbox',
+                    size: 14,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
+                ),
               ],
             )
           ],
