@@ -11,35 +11,33 @@ class CustomTextField extends StatelessWidget {
 
   CustomTextField(
       {super.key,
-        required this.hintText,
-        required this.controller,
-        this.isPassword = false,
-        this.keyboardType = TextInputType.text,
-        this.prefixIcon,this.width,this.labelText});
+      required this.hintText,
+      required this.controller,
+      this.isPassword = false,
+      this.keyboardType = TextInputType.text,
+      this.prefixIcon,
+      this.width,
+      this.labelText});
 
   @override
   Widget build(BuildContext context) {
-    return
-        SizedBox(
-          width: width ?? 343,
-          child: TextFormField(
-              controller: controller,
-              obscureText: isPassword,
-              keyboardType: keyboardType,
-              decoration: InputDecoration(
-                floatingLabelBehavior: FloatingLabelBehavior.always,
-                hintText: hintText,
-                labelText: labelText,
-                prefixIcon: prefixIcon!=null?Icon(prefixIcon):null,
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12)
-                ),
-
-                contentPadding: EdgeInsets.symmetric(
-                  vertical: 16,
-                  horizontal: 12,
-                ),
-              )),
-        );
+    return SizedBox(
+      width: width ?? 343,
+      child: TextFormField(
+          controller: controller,
+          obscureText: isPassword,
+          keyboardType: keyboardType,
+          decoration: InputDecoration(
+            floatingLabelBehavior: FloatingLabelBehavior.always,
+            hintText: hintText,
+            labelText: labelText,
+            prefixIcon: prefixIcon != null ? Icon(prefixIcon) : null,
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+            contentPadding: EdgeInsets.symmetric(
+              vertical: 16,
+              horizontal: 12,
+            ),
+          )),
+    );
   }
 }

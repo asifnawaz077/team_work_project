@@ -38,7 +38,7 @@ class _SplashViewState extends State<SplashView> {
             ),
             Center(
               child: Padding(
-                padding: const EdgeInsets.only(top: 130),
+                padding: const EdgeInsets.only(top: 150),
                 child: CustomText(
                   label: 'Protect your Legacy',
                   size: height * 0.025,

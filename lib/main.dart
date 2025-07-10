@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:team_work_project/View/Auth_View/Splash_View/Splash_View.dart';
+import 'package:team_work_project/View/Splash_View/Splash_View.dart';
 
 void main() {
   runApp(MyApp());

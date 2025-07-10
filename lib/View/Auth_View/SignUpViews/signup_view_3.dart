@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_4.dart';
 
 class SignupView3 extends StatefulWidget {
   const SignupView3({super.key});
@@ -120,8 +121,8 @@ class _SignupView3State extends State<SignupView3> {
               SizedBox(height: height * 0.03),
               BlueButtonWidget(
                 onPressed: () {
-                  final code = _controllers.map((c) => c.text).join();
-                  print("Entered code: $code");
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignupView4()));
                 },
                 text: 'Verify email',
               ),
