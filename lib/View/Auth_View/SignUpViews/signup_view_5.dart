@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_6.dart';
 
 class SignupView5 extends StatelessWidget {
   const SignupView5({super.key});
@@ -37,7 +38,12 @@ class SignupView5 extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
-          BlueButtonWidget(onPressed: () {}, text: 'Login'),
+          BlueButtonWidget(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SignupView6()));
+              },
+              text: 'Login'),
           SizedBox(
             height: 150,
           ),

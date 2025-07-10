@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
-import 'package:team_work_project/View/Auth_View/SignUpViews/signUp_view_1.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_1.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

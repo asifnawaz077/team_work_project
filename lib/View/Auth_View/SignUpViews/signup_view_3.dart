@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:team_work_project/Controller/constentes/app_color/app_color.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
@@ -141,9 +142,9 @@ class _SignupView3State extends State<SignupView3> {
                     child: Text(
                       'Send to different email',
                       style: GoogleFonts.jost(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                      ),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: AppColor.btnColorBlack),
                     ),
                   ),
                 ],
