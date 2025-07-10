@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_5.dart';
 
 class SignupView4 extends StatefulWidget {
   SignupView4({super.key});
@@ -119,7 +120,12 @@ class _SignupView4State extends State<SignupView4> {
               ],
             ),
             SizedBox(height: 20),
-            BlueButtonWidget(onPressed: () {}, text: 'Continue'),
+            BlueButtonWidget(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignupView5()));
+                },
+                text: 'Continue'),
             SizedBox(height: screenWidth * 0.5),
             CustomText(
               label: 'By using Solvbox, you agree to the',
