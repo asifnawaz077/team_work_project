@@ -8,60 +8,77 @@ import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_3.dart'
 
 class SignupView2 extends StatelessWidget {
   SignupView2({super.key});
-  TextEditingController emailController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         leading: ArrowBackIcon(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icons.arrow_back_rounded),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icons.arrow_back_rounded,
+        ),
         title: CustomText(
-            label: 'Add your email 1 / 3',
-            size: 20,
-            weight: FontWeight.w400,
-            fontType: GoogleFonts.jost),
+          label: 'Add your email 1 / 3',
+          size: 20,
+          weight: FontWeight.w400,
+          fontType: GoogleFonts.jost,
+        ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 30,
-            ),
-            Center(
-              child: CustomTextField(
-                  hintText: 'alexalexander@gmail.com',
-                  controller: emailController),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Center(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: width * 0.04),
+          child: Column(
+            children: [
+              SizedBox(height: height * 0.03),
+              Row(
+                children: [
+                  CustomText(
+                    label: 'Email',
+                    size: 16,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,
+                  ),
+                ],
+              ),
+              SizedBox(height: height * 0.01),
+              CustomTextField(
+                hintText: 'alexalexander@gmail.com',
+                controller: emailController,
+              ),
+              SizedBox(height: height * 0.03),
+              Center(
                 child: BlueButtonWidget(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SignupView3()));
-                    },
-                    text: 'Create an account')),
-            SizedBox(
-              height: 425,
-            ),
-            CustomText(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignupView3()),
+                    );
+                  },
+                  text: 'Create an account',
+                ),
+              ),
+              SizedBox(height: height * 0.45),
+              CustomText(
                 label: 'By using Solvbox, you agree to the',
                 size: 14,
                 weight: FontWeight.w600,
-                fontType: GoogleFonts.roboto),
-            CustomText(
+                fontType: GoogleFonts.roboto,
+              ),
+              CustomText(
                 label: 'Terms and Privacy Policy.',
                 size: 14,
                 weight: FontWeight.w600,
-                fontType: GoogleFonts.roboto),
-          ],
+                fontType: GoogleFonts.roboto,
+              ),
+            ],
+          ),
         ),
       ),
     );

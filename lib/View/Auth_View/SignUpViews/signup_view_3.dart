@@ -27,10 +27,10 @@ class _SignupView3State extends State<SignupView3> {
     super.dispose();
   }
 
-  Widget buildOTPField(int index) {
+  Widget buildOTPField(int index, double height, double width) {
     return Container(
-      height: 48,
-      width: 65,
+      height: height * 0.06,
+      width: width * 0.15,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(7),
@@ -42,7 +42,7 @@ class _SignupView3State extends State<SignupView3> {
         keyboardType: TextInputType.number,
         textAlign: TextAlign.center,
         maxLength: 1,
-        style: GoogleFonts.roboto(fontSize: 24),
+        style: GoogleFonts.roboto(fontSize: height * 0.03),
         decoration: const InputDecoration(
           border: InputBorder.none,
           counterText: '',
@@ -61,6 +61,9 @@ class _SignupView3State extends State<SignupView3> {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         leading: ArrowBackIcon(
@@ -78,83 +81,87 @@ class _SignupView3State extends State<SignupView3> {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(height: 30),
-            Center(
-              child: CustomText(
-                label: 'We just sent 5-digit code to',
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: width * 0.04),
+          child: Column(
+            children: [
+              SizedBox(height: height * 0.035),
+              Center(
+                child: CustomText(
+                  label: 'We just sent 5-digit code to',
+                  size: 16,
+                  weight: FontWeight.w400,
+                  fontType: GoogleFonts.roboto,
+                ),
+              ),
+              CustomText(
+                label: 'alexalexander@gmail.com, enter it below:',
                 size: 16,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.roboto,
               ),
-            ),
-            CustomText(
-              label: 'alexalexander@gmail.com, enter it below:',
-              size: 16,
-              weight: FontWeight.w400,
-              fontType: GoogleFonts.roboto,
-            ),
-            const SizedBox(height: 20),
-            const Padding(
-              padding: EdgeInsets.only(left: 30),
-              child: Align(
+              SizedBox(height: height * 0.025),
+              Align(
                 alignment: Alignment.centerLeft,
-                child: Text(
-                  'Code',
-                  style: TextStyle(fontSize: 16),
-                ),
-              ),
-            ),
-            const SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: List.generate(5, (index) => buildOTPField(index)),
-            ),
-            const SizedBox(height: 20),
-            BlueButtonWidget(
-              onPressed: () {
-                final code = _controllers.map((c) => c.text).join();
-                print("Entered code: $code");
-              },
-              text: 'Verify email',
-            ),
-            const SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CustomText(
-                  label: 'Wrong email?',
-                  size: 16,
-                  weight: FontWeight.w400,
-                  fontType: GoogleFonts.jost,
-                ),
-                TextButton(
-                  onPressed: () {},
+                child: Padding(
+                  padding: EdgeInsets.only(left: width * 0.03),
                   child: Text(
-                    'Send to different email',
-                    style: GoogleFonts.jost(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    'Code',
+                    style: TextStyle(fontSize: height * 0.022),
                   ),
                 ),
-              ],
-            ),
-            const SizedBox(height: 285),
-            CustomText(
-              label: 'By using Solvbox, you agree to the',
-              size: 14,
-              weight: FontWeight.w600,
-              fontType: GoogleFonts.roboto,
-            ),
-            CustomText(
-              label: 'Terms and Privacy Policy.',
-              size: 14,
-              weight: FontWeight.w600,
-              fontType: GoogleFonts.roboto,
-            ),
-          ],
+              ),
+              SizedBox(height: height * 0.015),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: List.generate(
+                    5, (index) => buildOTPField(index, height, width)),
+              ),
+              SizedBox(height: height * 0.03),
+              BlueButtonWidget(
+                onPressed: () {
+                  final code = _controllers.map((c) => c.text).join();
+                  print("Entered code: $code");
+                },
+                text: 'Verify email',
+              ),
+              SizedBox(height: height * 0.015),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CustomText(
+                    label: 'Wrong email?',
+                    size: 16,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Send to different email',
+                      style: GoogleFonts.jost(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: height * 0.28),
+              CustomText(
+                label: 'By using Solvbox, you agree to the',
+                size: 14,
+                weight: FontWeight.w600,
+                fontType: GoogleFonts.roboto,
+              ),
+              CustomText(
+                label: 'Terms and Privacy Policy.',
+                size: 14,
+                weight: FontWeight.w600,
+                fontType: GoogleFonts.roboto,
+              ),
+            ],
+          ),
         ),
       ),
     );
