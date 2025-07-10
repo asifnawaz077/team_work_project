@@ -4,6 +4,7 @@ import 'package:team_work_project/Controller/constentes/blue_button/blue_button_
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
+import 'package:team_work_project/View/Home_View/home_view_1.dart';
 
 class SignupView8 extends StatelessWidget {
   SignupView8({super.key});
@@ -66,7 +67,12 @@ class SignupView8 extends StatelessWidget {
               CustomTextField(
                   hintText: 'www.website.com', controller: fullNameController),
               const SizedBox(height: 30),
-              BlueButtonWidget(onPressed: () {}, text: 'Apply now'),
+              BlueButtonWidget(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomeView1()));
+                  },
+                  text: 'Apply now'),
               const SizedBox(height: 30),
             ],
           ),
