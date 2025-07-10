@@ -9,6 +9,7 @@ import 'package:team_work_project/View/Auth_View/Splash_View/Splash_View.dart';
 
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_2.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_1.dart';
+import 'package:team_work_project/View/profile_seeker_view/profile_seeker_2.dart';
 
 
 void main() {
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: ProfileSeeker1()//LoginView1()//LoginView4()//LoginView3()//LoginView2()//SplashView()
+        home: ProfileSeeker2()//LoginView1()//LoginView4()//LoginView3()//LoginView2()//SplashView()
      );
   }
 }
