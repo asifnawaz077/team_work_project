@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/app_color/app_color.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_7.dart';
+import 'package:team_work_project/View/Auth_View/SignUpViews/signup_view_8.dart';
 
 class SignupView6 extends StatelessWidget {
   const SignupView6({super.key});
@@ -38,12 +40,20 @@ class SignupView6 extends StatelessWidget {
               fontType: GoogleFonts.jost,
             ),
             SizedBox(height: screenHeight * 0.04),
-            BlueButtonWidget(onPressed: () {}, text: 'Apply as Problem Solver'),
+            BlueButtonWidget(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignupView7()));
+                },
+                text: 'Apply as Problem Solver'),
             SizedBox(height: screenHeight * 0.015),
 
             // ✅ Responsive container with approx 343 width
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SignupView8()));
+              },
               child: Container(
                 height: 60,
                 width: screenWidth * 0.955, // same as 343 / 375

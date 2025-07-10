@@ -5,14 +5,15 @@ import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
 
-class SignupView7 extends StatelessWidget {
-  SignupView7({super.key});
+class SignupView8 extends StatelessWidget {
+  SignupView8({super.key});
   final TextEditingController fullNameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final horizontalPadding = screenWidth * 0.04; // similar to 15 on 375 width
+    final horizontalPadding =
+        screenWidth * 0.04; // roughly 15 on standard width
 
     return Scaffold(
       appBar: AppBar(
@@ -23,7 +24,7 @@ class SignupView7 extends StatelessWidget {
           icon: Icons.arrow_back_rounded,
         ),
         title: CustomText(
-          label: 'Problem Solver',
+          label: 'Problem Seeker',
           size: 20,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
@@ -64,11 +65,7 @@ class SignupView7 extends StatelessWidget {
               _buildLabel('Website'),
               CustomTextField(
                   hintText: 'www.website.com', controller: fullNameController),
-              const SizedBox(height: 15),
-              _buildLabel('How do you help your clients?'),
-              CustomTextField(
-                  hintText: 'Answer', controller: fullNameController),
-              const SizedBox(height: 50),
+              const SizedBox(height: 30),
               BlueButtonWidget(onPressed: () {}, text: 'Apply now'),
               const SizedBox(height: 30),
             ],
