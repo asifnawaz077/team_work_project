@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
+import 'package:team_work_project/View/Home_View/top_experts.dart';
 
 class HomeView1 extends StatefulWidget {
   const HomeView1({super.key});
@@ -115,7 +116,10 @@ class _HomeView1State extends State<HomeView1> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => TopExperts()));
+                },
                 child: CustomText(
                   label: 'Top Experts',
                   size: 16,
