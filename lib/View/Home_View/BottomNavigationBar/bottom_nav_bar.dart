@@ -12,7 +12,7 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
-    HomeView1(), // Home page
+    HomeView1(),
     Center(child: Text('Solvbox.AI')),
     Center(child: Text('Chats')),
     Center(child: Text('LoDeMo')),
@@ -27,6 +27,9 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
 
   @override
   Widget build(BuildContext context) {
+    final w = MediaQuery.of(context).size.width / 375; // Base width
+    final h = MediaQuery.of(context).size.height / 812; // Base height
+
     return Scaffold(
       body: _pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -34,9 +37,12 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         elevation: 10,
-        selectedItemColor: Color(0xFF1C63D5),
+        selectedItemColor: const Color(0xFF1C63D5),
         unselectedItemColor: Colors.black54,
         showUnselectedLabels: true,
+        selectedFontSize: 12 * w,
+        unselectedFontSize: 12 * w,
+        iconSize: 24 * w,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),
@@ -48,16 +54,22 @@ class _CustomBottomNavState extends State<CustomBottomNav> {
               children: [
                 Icon(Icons.auto_awesome),
                 Positioned(
-                  top: -2,
+                  top: -2 * h,
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 4 * w,
+                      vertical: 1 * h,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.red,
-                      borderRadius: BorderRadius.circular(4),
+                      borderRadius: BorderRadius.circular(4 * w),
                     ),
                     child: Text(
                       'beta',
-                      style: TextStyle(fontSize: 8, color: Colors.white),
+                      style: TextStyle(
+                        fontSize: 8 * w,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
