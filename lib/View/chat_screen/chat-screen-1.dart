@@ -305,6 +305,37 @@ class _ChatScreen1State extends State<ChatScreen1> {
                   color: Color(0xff797C7B),
                 ),
               ),
+              SizedBox(height: 13,),
+              InkWell(
+                onTap: (){},
+                child: ListTile(
+                  leading: CircleAvatar(
+                    radius: 31,
+                    backgroundImage: AssetImage('assets/person.jpg'),
+                  ),
+                  title: CustomText(
+                    label: 'To Schneider',
+                    size: 16,
+                    weight: FontWeight.w700,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff000E08),
+                  ),
+                  subtitle: CustomText(
+                    label: 'Hello Buddy!',
+                    size: 12,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff797C7B),
+                  ),
+                  trailing: CustomText(
+                    label: '2 min ago',
+                    size: 12,
+                    weight: FontWeight.w400,
+                    fontType: GoogleFonts.jost,
+                    color: Color(0xff797C7B),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
