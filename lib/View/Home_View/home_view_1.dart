@@ -41,11 +41,14 @@ class _HomeView1State extends State<HomeView1> {
             SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: CustomText(
-                label: 'Trending Solution',
-                size: 16,
-                weight: FontWeight.w600,
-                fontType: GoogleFonts.jost,
+              child: InkWell(
+                onTap: () {},
+                child: CustomText(
+                  label: 'Trending Solution',
+                  size: 16,
+                  weight: FontWeight.w600,
+                  fontType: GoogleFonts.jost,
+                ),
               ),
             ),
             SizedBox(height: 15),
@@ -111,11 +114,14 @@ class _HomeView1State extends State<HomeView1> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: CustomText(
-                label: 'Top Experts',
-                size: 16,
-                weight: FontWeight.w600,
-                fontType: GoogleFonts.jost,
+              child: InkWell(
+                onTap: () {},
+                child: CustomText(
+                  label: 'Top Experts',
+                  size: 16,
+                  weight: FontWeight.w600,
+                  fontType: GoogleFonts.jost,
+                ),
               ),
             ),
             SizedBox(height: 15),

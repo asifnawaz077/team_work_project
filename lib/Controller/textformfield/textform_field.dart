@@ -10,6 +10,7 @@ class CustomTextField extends StatelessWidget {
   final double? width;
   final String? labelText;
 
+<<<<<<< HEAD
   const CustomTextField({
     super.key,
     required this.hintText,
@@ -21,6 +22,18 @@ class CustomTextField extends StatelessWidget {
     this.width,
     this.labelText,
   });
+=======
+
+  const CustomTextField(
+      {super.key,
+      required this.hintText,
+      required this.controller,
+      this.isPassword = false,
+      this.keyboardType = TextInputType.text,
+      this.prefixIcon,
+      this.width,
+      this.labelText, this.suffixIcon});
+>>>>>>> b115848b74e918344f8e3fe2b07d27ddfab8c858
 
   @override
   Widget build(BuildContext context) {
@@ -46,5 +59,10 @@ class CustomTextField extends StatelessWidget {
         ),
       ),
     );
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b115848b74e918344f8e3fe2b07d27ddfab8c858
   }
 }
