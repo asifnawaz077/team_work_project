@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
+import 'package:file_picker/file_picker.dart';
 class ChatScreen3 extends StatefulWidget {
   const ChatScreen3({super.key});
 
@@ -22,10 +23,34 @@ Future<void> _pickImageFromCamera()async{
     print('Image Path: ${_imageFile!.path}');
   }
 }
+ Future<void> _pickDocument() async {
+   final result = await FilePicker.platform.pickFiles(
+     type: FileType.custom,
+     allowedExtensions: ['pdf', 'doc', 'docx', 'xls', 'xlsx'],
+   );
+
+   if (result != null && result.files.isNotEmpty) {
+     final filePath = result.files.single.path;
+     print('Picked document: $filePath');
+   } else {
+     print('No document selected.');
+   }
+ }
+ Future<void> _pickMediaFromGallery() async {
+   final pickedFile = await ImagePicker().pickImage(source: ImageSource.gallery); // You can also use pickVideo
+   if (pickedFile != null) {
+     setState(() {
+       _imageFile = File(pickedFile.path);
+     });
+     print('Media Path: ${_imageFile!.path}');
+   } else {
+     print('No media selected.');
+   }
+ }
     @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black38,
+      backgroundColor: Colors.grey,
         bottomSheet: Container(
           padding: EdgeInsets.all(16),
           decoration: BoxDecoration(
@@ -47,7 +72,10 @@ Future<void> _pickImageFromCamera()async{
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              CustomText(label: 'Share Content', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+              Padding(
+                padding: const EdgeInsets.only(left: 110),
+                child: CustomText(label: 'Share Content', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+              ),
 
               SizedBox(height: 16),
 
@@ -57,12 +85,12 @@ Future<void> _pickImageFromCamera()async{
               ),
 
               ListTile(
-                leading: IconButton(onPressed: (){}, icon: Icon(Icons.dock)),
+                leading: IconButton(onPressed: _pickDocument, icon: Icon(Icons.dock)),
                 title: CustomText(label: 'Document', size: 14, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
                 subtitle: CustomText(label: 'Share your files', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
               ),
               ListTile(
-                leading: IconButton(onPressed: (){}, icon: Icon(Icons.photo)),
+                leading: IconButton(onPressed: _pickMediaFromGallery, icon: Icon(Icons.photo)),
                 title: CustomText(label: 'Media', size: 14, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
                 subtitle:CustomText(label: 'Share photos and videos', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
               ),
@@ -77,14 +105,13 @@ Future<void> _pickImageFromCamera()async{
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Tom Schneider", style: TextStyle(fontSize: 16)),
-                Text("Active now",
-                    style: TextStyle(fontSize: 12, color: Colors.green)),
+                CustomText(label: 'Tom Schneider', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+                CustomText(label: 'Active now', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),)
               ],
             ),
           ],
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey[400],
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 1,
       ),
@@ -93,6 +120,7 @@ Future<void> _pickImageFromCamera()async{
           Row(
             children: [
               Spacer(),
+              SizedBox(height: 200,),
               Container(
                 height: 37,
                 width: 151,
@@ -104,21 +132,25 @@ Future<void> _pickImageFromCamera()async{
               ),
             ],
           ),
-          SizedBox(height: 50,),
+          SizedBox(height: 10,),
           Row(
             children: [
               CircleAvatar(
                 backgroundImage: AssetImage('assets/person.jpg'),
               ),
+                SizedBox(width: 10,),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CustomText(label: 'Tom Schneider', size: 12, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+                    CustomText(label: 'Tom Schneider', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
                     Column(
                       children: [
+                        SizedBox(width: 5,),
                         Container(
                           height: 37,
                           width: 151,
                           decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
                             borderRadius: BorderRadius.circular(15),
                           ),
                           child:  Center(child: CustomText(label: 'Have a great working week', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,)),

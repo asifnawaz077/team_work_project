@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
+import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_4.dart';
+
+import '../../Controller/text_comp/text_component.dart';
 
 class ChatScreen2 extends StatefulWidget {
   const ChatScreen2({super.key});
@@ -89,9 +92,9 @@ class _ChatScreen2State extends State<ChatScreen2> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Tom Schneider", style: TextStyle(fontSize: 16)),
-                Text("Active now",
-                    style: TextStyle(fontSize: 12, color: Colors.green)),
+                CustomText(label: 'Tom Schneider', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+                CustomText(label: 'Active now', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
+
               ],
             ),
           ],
@@ -114,24 +117,7 @@ class _ChatScreen2State extends State<ChatScreen2> {
           secondaryColor: Color(0xFFF2F2F2), // received message color
           receivedMessageBodyTextStyle: TextStyle(color: Colors.black),
         ),
-        // inputToolbarBuilder: (context, input) {
-        //   return Row(
-        //     children: [
-        //       IconButton(
-        //         icon: const Icon(Icons.link, color: Colors.blue),
-        //         onPressed: () {
-        //           Navigator.push(
-        //             context,
-        //             MaterialPageRoute(
-        //               builder: (context) => ProfileSeeker4(),
-        //             ),
-        //           );
-        //         },
-        //       ),
-        //       Expanded(child: input),
-        //     ],
-        //   );
-        // },
+
       ),
     );
   }
