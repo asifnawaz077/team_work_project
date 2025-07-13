@@ -4,7 +4,7 @@ import 'package:team_work_project/Controller/constentes/blue_button/blue_button_
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
-import 'package:team_work_project/View/Home_View/top_experts.dart';
+import 'package:team_work_project/View/Home_View/BottomNavigationBar/Home_pages/top_experts.dart';
 
 class SignupView7 extends StatelessWidget {
   SignupView7({super.key});

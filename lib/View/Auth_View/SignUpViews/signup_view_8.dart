@@ -5,7 +5,7 @@ import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
 import 'package:team_work_project/View/Home_View/BottomNavigationBar/bottom_nav_bar.dart';
-import 'package:team_work_project/View/Home_View/home_view_1.dart';
+import 'package:team_work_project/View/Home_View/BottomNavigationBar/Home_pages/home_view_1.dart';
 
 class SignupView8 extends StatelessWidget {
   SignupView8({super.key});
