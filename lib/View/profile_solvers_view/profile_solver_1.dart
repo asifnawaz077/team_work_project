@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_2.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_3.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_6.dart';
 
 import '../../Controller/text_comp/text_component.dart';
 
@@ -27,7 +30,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
             currentIndex: seletedindex,
             items: [
               BottomNavigationBarItem(label: 'Home',icon: Icon(Icons.home)),
-              BottomNavigationBarItem(label: 'SolvboxAI',icon: Icon(Icons.lightbulb)),
+              BottomNavigationBarItem(label: 'SolvboxAI',icon: Icon(Icons.hourglass_empty_sharp)),
               BottomNavigationBarItem(label: 'Chats',icon: Icon(Icons.chat)),
               BottomNavigationBarItem(label: 'LodeMo',icon: Icon(Icons.lightbulb_rounded)),
               BottomNavigationBarItem(label: 'Profile',icon: Icon(Icons.perm_identity_rounded)),
@@ -35,7 +38,9 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
         floatingActionButton: FloatingActionButton(
           shape: CircleBorder(),
           backgroundColor: Color(0xff003366),
-          onPressed: (){},
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSolver2()));
+          },
           child: CircleAvatar(
           backgroundColor: Color(0xff003366),
           child: Icon(Icons.add,color: Colors.white,),
@@ -141,26 +146,31 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
         SizedBox(
           width: 20,
         ),
-        Container(
-          height: 36,
-          width: 120,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5), color: Color(0xff003366)),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(
-                Icons.person,
-                color: Colors.white,
-              ),
-              CustomText(
-                label: 'User Details',
-                size: 14,
-                weight: FontWeight.w400,
-                fontType: GoogleFonts.jost,
-                color: Colors.white,
-              )
-            ],
+        GestureDetector(
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSolver6()));
+          },
+          child: Container(
+            height: 36,
+            width: 120,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5), color: Color(0xff003366)),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(
+                  Icons.person,
+                  color: Colors.white,
+                ),
+                CustomText(
+                  label: 'User Details',
+                  size: 14,
+                  weight: FontWeight.w400,
+                  fontType: GoogleFonts.jost,
+                  color: Colors.white,
+                )
+              ],
+            ),
           ),
         ),
         SizedBox(
@@ -216,12 +226,17 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
             fontType: GoogleFonts.jost,
             color: Color(0xff003366),
           ),
-          CustomText(
-            label: 'Services',
-            size: 14,
-            weight: FontWeight.w400,
-            fontType: GoogleFonts.jost,
-            color: Color(0xffC0C0C0),
+          GestureDetector(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSolver3()));
+            },
+            child: CustomText(
+              label: 'Services',
+              size: 14,
+              weight: FontWeight.w400,
+              fontType: GoogleFonts.jost,
+              color: Color(0xffC0C0C0),
+            ),
           ),
           CustomText(
             label: 'References',

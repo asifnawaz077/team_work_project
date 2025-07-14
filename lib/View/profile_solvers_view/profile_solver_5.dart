@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:team_work_project/View/profile_seeker_view/profile_seeker_3.dart';
 
 import '../../Controller/text_comp/text_component.dart';
 
@@ -36,7 +37,9 @@ class _ProfileSolver5State extends State<ProfileSolver5> {
         floatingActionButton: FloatingActionButton(
           shape: CircleBorder(),
           backgroundColor: Color(0xff003366),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSeeker3()));
+          },
           child: CircleAvatar(
             backgroundColor: Color(0xff003366),
             child: Icon(
@@ -233,16 +236,16 @@ class _ProfileSolver5State extends State<ProfileSolver5> {
               CustomText(
                 label: 'References',
                 size: 14,
-                weight: FontWeight.w600,
+                weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
-                color: Color(0xff003366),
+                color: Color(0xffC0C0C0),
               ),
               CustomText(
                 label: 'Reviews',
                 size: 14,
-                weight: FontWeight.w400,
+                weight: FontWeight.w600,
                 fontType: GoogleFonts.jost,
-                color: Color(0xffC0C0C0),
+                color: Color(0xff003366),
               ),
             ],
           ),
@@ -252,7 +255,7 @@ class _ProfileSolver5State extends State<ProfileSolver5> {
           Row(
             children: [
               SizedBox(
-                width: 94,
+                width: 272,
               ),
               Container(
                 height: 4,

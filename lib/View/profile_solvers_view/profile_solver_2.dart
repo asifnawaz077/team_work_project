@@ -61,17 +61,19 @@ class _ProfileSolver2State extends State<ProfileSolver2> {
             BottomNavigationBarItem(label: 'LodeMo',icon: Icon(Icons.lightbulb_rounded)),
             BottomNavigationBarItem(label: 'Profile',icon: Icon(Icons.perm_identity_rounded)),
           ]),
-      body: Column(
-        children: [
-          SizedBox(height: 20,),
-          Center(child: CustomTextField(hintText: 'Title', controller:_titleController ,)),
-          SizedBox(height: 20,),
-          Center(child: CustomTextField(hintText: 'Description', controller:_descriptionController )),
-          SizedBox(height: 20,),
-          Center(child: CustomTextField(hintText: 'Keyword', controller:_keywordController )),
-          SizedBox(height: 150,),
-          Center(child: BlueButtonWidget(onPressed: pickFile, text: 'Upload')),
-                  ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 80,),
+            Center(child: CustomTextField(hintText: 'Title', controller:_titleController ,)),
+            SizedBox(height: 20,),
+            Center(child: CustomTextField(hintText: 'Description', controller:_descriptionController )),
+            SizedBox(height: 20,),
+            Center(child: CustomTextField(hintText: 'Keyword', controller:_keywordController )),
+            SizedBox(height: 190,),
+            Center(child: BlueButtonWidget(onPressed: pickFile, text: 'Upload')),
+                    ],
+        ),
       ),
 
     );

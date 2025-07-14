@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_2.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_5.dart';
 
 import '../../Controller/text_comp/text_component.dart';
 
@@ -35,7 +37,9 @@ class _ProfileSolver4State extends State<ProfileSolver4> {
         floatingActionButton: FloatingActionButton(
           shape: CircleBorder(),
           backgroundColor: Color(0xff003366),
-          onPressed: (){},
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSolver2()));
+          },
           child: CircleAvatar(
             backgroundColor: Color(0xff003366),
             child: Icon(Icons.add,color: Colors.white,),
@@ -230,12 +234,17 @@ class _ProfileSolver4State extends State<ProfileSolver4> {
                     fontType: GoogleFonts.jost,
                     color: Color(0xff003366),
                   ),
-                  CustomText(
-                    label: 'Reviews',
-                    size: 14,
-                    weight: FontWeight.w400,
-                    fontType: GoogleFonts.jost,
-                    color: Color(0xffC0C0C0),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSolver5()));
+                    },
+                    child: CustomText(
+                      label: 'Reviews',
+                      size: 14,
+                      weight: FontWeight.w400,
+                      fontType: GoogleFonts.jost,
+                      color: Color(0xffC0C0C0),
+                    ),
                   ),
                 ],
               ),
@@ -245,7 +254,7 @@ class _ProfileSolver4State extends State<ProfileSolver4> {
               Row(
                 children: [
                   SizedBox(
-                    width: 94,
+                    width: 183,
                   ),
                   Container(
                     height: 4,

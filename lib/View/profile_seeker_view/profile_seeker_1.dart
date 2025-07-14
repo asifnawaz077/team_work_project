@@ -289,7 +289,7 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

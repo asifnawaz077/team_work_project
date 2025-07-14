@@ -19,6 +19,7 @@ import 'package:team_work_project/View/profile_solvers_view/profile_solver_2.dar
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_3.dart';
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_4.dart';
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_5.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_6.dart';
 
 
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      home: ProfileSolver5()//ChatSplash()//HomeView2()//SplashView(),
+      home: ProfileSolver1()//ChatSplash()//HomeView2()//SplashView(),
     );
   }
 }
