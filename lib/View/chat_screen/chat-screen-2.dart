@@ -116,31 +116,15 @@ class _ChatScreen2State extends State<ChatScreen2> {
 
                      showUserAvatars: true,
                      showUserNames: true,
-                     onAttachmentPressed: () {
-                       showDialog(
-                         context: context,
-                         builder: (_) => AlertDialog(
-                           title: Text("Attachment"),
-                           content: Text("You pressed the link button."),
-                           actions: [
-                             TextButton(
-                               onPressed: (){
-                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatScreen3()));
-                               },
-                               child: Text("OK"),
-                             ),
-                           ],
-                         ),
-                       );
-                     },
+                     onAttachmentPressed: () {},
                      theme: DefaultChatTheme(
 
-                       inputBackgroundColor: const Color(0xffFFFFFF),
+                       inputBackgroundColor: Color(0xffFFFFFF),
                        inputTextColor: Colors.black,
-                       sendButtonIcon: const Icon(Icons.send, color: Colors.blue),
-                       primaryColor: const Color(0xFF002DE3), // your sent message color
-                       secondaryColor: const Color(0xFFF2F2F2), // received message color
-                       receivedMessageBodyTextStyle: const TextStyle(color: Colors.black),
+                       sendButtonIcon:  Icon(Icons.send, color: Colors.blue),
+                       primaryColor:  Color(0xFF002DE3), // your sent message color
+                       secondaryColor:  Color(0xFFF2F2F2), // received message color
+                       receivedMessageBodyTextStyle:  TextStyle(color: Colors.black),
                        attachmentButtonIcon: IconButton(onPressed: (){
                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatScreen3()));
                        }, icon: Icon(Icons.link,color: Colors.blue,))
