@@ -56,7 +56,7 @@ class _ProfileSolver2State extends State<ProfileSolver2> {
           currentIndex: seletedindex,
           items: [
             BottomNavigationBarItem(label: 'Home',icon: Icon(Icons.home)),
-            BottomNavigationBarItem(label: 'SolvboxAI',icon: Icon(Icons.lightbulb)),
+            BottomNavigationBarItem(label: 'SolvboxAI',icon: Icon(Icons.hourglass_empty_sharp)),
             BottomNavigationBarItem(label: 'Chats',icon: Icon(Icons.chat)),
             BottomNavigationBarItem(label: 'LodeMo',icon: Icon(Icons.lightbulb_rounded)),
             BottomNavigationBarItem(label: 'Profile',icon: Icon(Icons.perm_identity_rounded)),
