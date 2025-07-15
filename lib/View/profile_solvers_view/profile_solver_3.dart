@@ -72,14 +72,14 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
             children: [
               CustomText(
                 label: 'Alex Alexander',
-                size: 14,
+                size: TextSize.medium,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.jost,
                 color: Color(0XFF544C4C),
               ),
               CustomText(
                 label: '    @alexalex',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
                 color: Color(0xff544C4C),
@@ -95,14 +95,14 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
                   ),
                   CustomText(
                     label: ' 4.5',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost,
                     color: Color(0xff544C4C),
                   ),
                   CustomText(
                     label: ' (28)',
-                    size: 10,
+                    size: TextSize.small,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                     color: Color(0xffC0C0C0),
@@ -134,7 +134,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
               ),
               CustomText(
                 label: 'Message',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
                 color: Colors.white,
@@ -159,7 +159,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
               ),
               CustomText(
                 label: 'User Details',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
                 color: Colors.white,
@@ -182,7 +182,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
           ),
           CustomText(
             label: 'More liquidity through office automation',
-            size: 16,
+            size: TextSize.medium,
             weight: FontWeight.w500,
             fontType: GoogleFonts.jost,
             color: Color(0xff003366),
@@ -201,7 +201,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
               'solving, process optimization, and strategic support, all\n'
               'delivered with a focus on quality and results. Lets work\n'
               'together to create impactful outcomes!',
-          size: 14,
+          size: TextSize.small,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
           color: Color(0xff544C4C),
@@ -215,14 +215,14 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
         children: [
           CustomText(
             label: 'Videos',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w400,
             fontType: GoogleFonts.jost,
             color: Color(0xffC0C0C0),
           ),
           CustomText(
             label: 'Services',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w600,
             fontType: GoogleFonts.jost,
             color: Color(0xff003366),
@@ -233,7 +233,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
             },
             child: CustomText(
               label: 'References',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w400,
               fontType: GoogleFonts.jost,
               color: Color(0xffC0C0C0),
@@ -241,7 +241,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
           ),
           CustomText(
             label: 'Reviews',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w400,
             fontType: GoogleFonts.jost,
             color: Color(0xffC0C0C0),
@@ -293,11 +293,11 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 15,),
-                        CustomText(label: 'Alex Alexander', size: 15, weight: FontWeight.w600, fontType:GoogleFonts.jost),
+                        CustomText(label: 'Alex Alexander', size: TextSize.medium, weight: FontWeight.w600, fontType:GoogleFonts.jost),
                         SizedBox(height: 6,),
                         CustomText(label: 'Create android ios\n'
                             'Flutter ui ux design for your\n'
-                            'business', size: 14, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff000000),)
+                            'business', size: TextSize.small, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff000000),)
                       ],
                     ))
                   ],
@@ -338,11 +338,11 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 15,),
-                        CustomText(label: 'Newton', size: 15, weight: FontWeight.w600, fontType:GoogleFonts.jost),
+                        CustomText(label: 'Newton', size: TextSize.medium, weight: FontWeight.w600, fontType:GoogleFonts.jost),
                         SizedBox(height: 6,),
                         CustomText(label: 'Create android ios\n'
                             'Flutter ui ux design for your\n'
-                            'business', size: 14, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff000000),)
+                            'business', size: TextSize.small, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff000000),)
                       ],
                     ))
                   ],
@@ -383,11 +383,11 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(height: 15,),
-                        CustomText(label: 'Einstien', size: 15, weight: FontWeight.w600, fontType:GoogleFonts.jost),
+                        CustomText(label: 'Einstien', size: TextSize.medium, weight: FontWeight.w600, fontType:GoogleFonts.jost),
                         SizedBox(height: 6,),
                         CustomText(label: 'Create android ios\n'
                             'Flutter ui ux design for your\n'
-                            'business', size: 14, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff000000),)
+                            'business', size: TextSize.small, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff000000),)
                       ],
                     ))
                   ],
