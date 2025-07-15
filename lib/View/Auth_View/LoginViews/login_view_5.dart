@@ -18,7 +18,7 @@ class _LoginView5State extends State<LoginView5> {
       appBar: AppBar(
         title: CustomText(
           label: 'Reset password',
-          size: 20.0,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
           color: Color(0xff000000),
@@ -38,7 +38,7 @@ class _LoginView5State extends State<LoginView5> {
               child: CustomText(
                 label:
                     '                    We have sent an email\nto alexalexander@gmail.com with instruction\n                    to reset your password',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.roboto,
                 color: Color(0xff27252E),
@@ -53,12 +53,12 @@ class _LoginView5State extends State<LoginView5> {
             ),
             CustomText(
                 label: 'By using Solvbox, you agree to the',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.roboto),
             CustomText(
                 label: 'Terms and Privacy Policy.',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.roboto),
           ],

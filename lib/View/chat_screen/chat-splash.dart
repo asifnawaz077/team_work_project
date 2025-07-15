@@ -23,9 +23,9 @@ class _ChatSplashState extends State<ChatSplash> {
             child: Image.asset('assets/chatsplash.png',color: Colors.black,),
           ),
           SizedBox(height: 12,),
-          CustomText(label: 'SolvboxAI', size: 18, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Color(0xff000000),),
+          CustomText(label: 'SolvboxAI', size: TextSize.large, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Color(0xff000000),),
           SizedBox(height: 60,),
-          CustomText(label: 'C  o  m  i  n  g     S  o  o  n ', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Color(0xff000000),)
+          CustomText(label: 'C  o  m  i  n  g     S  o  o  n ', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Color(0xff000000),)
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

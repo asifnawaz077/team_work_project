@@ -19,7 +19,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
         actions: [
           Padding(
             padding: EdgeInsets.only(right: 10),
-            child: CustomText(label: 'Edit', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+            child: CustomText(label: 'Edit', size:TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
           )
         ],
       ),
@@ -35,7 +35,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Full Name', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Full Name', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -59,7 +59,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'User Name', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'User Name', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -83,7 +83,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Email', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Email', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -107,7 +107,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Description', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Description', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -124,7 +124,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
                     'problem-solving, process optimization, and strategic\n'
                     'support all delivered with a focus on quality and results\n'
                     'Lets work together to create an impactful outcomes',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.jost,
                   color: Color(0xff544C4C),
@@ -134,7 +134,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Location', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Location', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -158,7 +158,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Industry', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Industry', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -182,7 +182,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Company Name', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Company Name', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -206,7 +206,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Phone Number', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Phone Number', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),
@@ -230,7 +230,7 @@ class _ProfileSeeker4State extends State<ProfileSeeker4> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                CustomText(label: 'Website', size: 16, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
+                CustomText(label: 'Website', size: TextSize.medium, weight: FontWeight.w600, fontType: GoogleFonts.jost,color: Colors.black,),
               ],
             ),
             SizedBox(height: 7,),

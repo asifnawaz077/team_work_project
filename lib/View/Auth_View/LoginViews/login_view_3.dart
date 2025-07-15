@@ -22,7 +22,7 @@ class _LoginView3State extends State<LoginView3> {
       appBar: AppBar(
         title: CustomText(
           label: 'Log into account',
-          size: 20.0,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
           color: Color(0xff000000),
@@ -39,7 +39,7 @@ class _LoginView3State extends State<LoginView3> {
               Row(
                 children: [
                   SizedBox(width: 20,),
-                  CustomText(label: 'Email', size: 16, weight: FontWeight.w400, fontType: GoogleFonts.jost),
+                  CustomText(label: 'Email', size: TextSize.medium, weight: FontWeight.w400, fontType: GoogleFonts.jost),
                 ],
               ),
               SizedBox(height: 5,),
@@ -53,7 +53,7 @@ class _LoginView3State extends State<LoginView3> {
               Row(
                 children: [
                   SizedBox(width: 20,),
-                  CustomText(label: 'Password', size: 16, weight: FontWeight.w400, fontType: GoogleFonts.jost),
+                  CustomText(label: 'Password', size: TextSize.medium, weight: FontWeight.w400, fontType: GoogleFonts.jost),
                 ],
               ),
               SizedBox(height: 5,),
@@ -74,7 +74,7 @@ class _LoginView3State extends State<LoginView3> {
                 },
                 child: CustomText(
                     label: 'Forgot password?',
-                    size: 14,
+                    size: TextSize.small,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost),
               ),
@@ -83,12 +83,12 @@ class _LoginView3State extends State<LoginView3> {
               ),
               CustomText(
                   label: 'By using Solvbox, you agree to the',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.roboto),
               CustomText(
                   label: 'Terms and Privacy Policy.',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.roboto),
             ],

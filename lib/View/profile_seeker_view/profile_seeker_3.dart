@@ -34,7 +34,9 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
           items: [
             BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
             BottomNavigationBarItem(
-                label: 'SolvboxAI', icon: Icon(Icons.hourglass_empty_sharp)),
+
+                label: 'Home', icon: Icon(Icons.hourglass_empty_sharp)),
+
             BottomNavigationBarItem(label: 'Chats', icon: Icon(Icons.chat)),
             BottomNavigationBarItem(
                 label: 'LodeMo', icon: Icon(Icons.lightbulb_rounded)),
@@ -47,8 +49,8 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                           MaterialPageRoute(
                               builder: (context) => ProfileSeeker4()));
                     },
-                    child: Icon(Icons.perm_identity_rounded))),
-          ]),
+                    child: Icon(Icons.perm_identity_rounded)),
+            )]),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -59,7 +61,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
               Center(
                 child: CustomText(
                   label: 'Chose Ratings',
-                  size: 16,
+                  size: TextSize.medium,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.jost,
                   color: Color(0xff000000),
@@ -93,7 +95,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                   ),
                   CustomText(
                     label: 'Full Name',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost,
                     color: Colors.black,
@@ -117,7 +119,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                   ),
                   CustomText(
                     label: 'Email',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost,
                     color: Colors.black,
@@ -141,7 +143,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                   ),
                   CustomText(
                     label: 'How was your experience?',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost,
                     color: Colors.black,
@@ -149,8 +151,6 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                 ],
               ),
               SizedBox(height: 12),
-
-              // Step 2: Box jisme text likha hai
               Container(
                   height: 68,
                   width: 343,
@@ -162,7 +162,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                   child: CustomText(
                     label:
                         'Amazing experience! The team was friendly, prompt, and delivered beyond expectations. Will definitely return!',
-                    size: 12,
+                    size: TextSize.minismall,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                     color: Color(0xff7A7A7A),
@@ -184,7 +184,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                     label:
                         'I confirm that the review is honest and based on a\n'
                         'collaboration',
-                    size: 12,
+                    size: TextSize.minismall,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                     color: Color(0xff7A7A7A),

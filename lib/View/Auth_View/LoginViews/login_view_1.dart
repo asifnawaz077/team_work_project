@@ -27,7 +27,7 @@ class _LoginView1State extends State<LoginView1> {
           SizedBox(height: 35,),
           CustomText(
             label: 'Protect your legacy',
-            size: 17.0,
+            size: TextSize.large,
             weight: FontWeight.bold,
             fontType: GoogleFonts.jost,
             color: Colors.black,
@@ -37,7 +37,7 @@ class _LoginView1State extends State<LoginView1> {
           ),
           CustomText(
             label: 'Welcome to Solvbox',
-            size: 28,
+            size: TextSize.extralarge,
             weight: FontWeight.w400,
             fontType: GoogleFonts.jost,
             color: Color(0xff000000),
@@ -66,7 +66,7 @@ class _LoginView1State extends State<LoginView1> {
             children: [
               CustomText(
                 label: 'Already have a account?',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
               ),
@@ -74,7 +74,7 @@ class _LoginView1State extends State<LoginView1> {
                  onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView2()));},
                  child: CustomText(
                     label: ' Log in',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost),
                )

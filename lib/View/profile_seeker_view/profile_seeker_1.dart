@@ -31,14 +31,14 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                   children: [
                     CustomText(
                       label: 'Alexander Scheer',
-                      size: 14,
+                      size: TextSize.medium,
                       weight: FontWeight.w600,
                       fontType: GoogleFonts.jost,
                       color: Color(0XFF544C4C),
                     ),
                     CustomText(
                       label: '@alexalex',
-                      size: 16,
+                      size: TextSize.medium,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff544C4C),
@@ -51,12 +51,12 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                         ),
                         CustomText(
                             label: ' 4.5',
-                            size: 16,
+                            size: TextSize.medium,
                             weight: FontWeight.w600,
                             fontType: GoogleFonts.jost),
                         CustomText(
                           label: ' (28)',
-                          size: 10,
+                          size: TextSize.minismall,
                           weight: FontWeight.w400,
                           fontType: GoogleFonts.jost,
                           color: Color(0xffC0C0C0),
@@ -77,7 +77,7 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                 ),
                 CustomText(
                   label: 'Description',
-                  size: 16,
+                  size: TextSize.medium,
                   weight: FontWeight.w500,
                   fontType: GoogleFonts.jost,
                   color: Color(0xff003366),
@@ -99,7 +99,7 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                       'solving, process optimization, and strategic support, all\n'
                       'delivered with a focus on quality and results. Lets work\n'
                       'together to create impactful outcomes!',
-                  size: 13,
+                  size: TextSize.small,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.jost,
                   color: Color(0xff544C4C),
@@ -120,7 +120,7 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
               children: [
                 CustomText(
                   label: 'User Details',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.jost,
                   color: Color(0xff003366),
@@ -129,7 +129,7 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                     onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSeeker2()));},
                     child: CustomText(
                       label: 'Reviews',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,
                       color: Color(0xffC0C0C0),
@@ -165,7 +165,7 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                 ),
                 CustomText(
                   label: 'User Details',
-                  size: 16,
+                  size: TextSize.medium,
                   weight: FontWeight.w500,
                   fontType: GoogleFonts.jost,
                   color: Color(0xff000E08),
@@ -186,14 +186,14 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                     ),
                     title: CustomText(
                       label: 'Company Name',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w500,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff000E08),
                     ),
                     subtitle: CustomText(
                         label: 'Solvbox',
-                        size: 14,
+                        size: TextSize.small,
                         weight: FontWeight.w400,
                         fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
                   ),
@@ -204,14 +204,14 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                     ),
                     title: CustomText(
                       label: 'Industry',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w500,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff000E08),
                     ),
                     subtitle: CustomText(
                       label: 'Designing',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
                   ),
@@ -222,14 +222,14 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                     ),
                     title: CustomText(
                       label: 'Location',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w500,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff000E08),
                     ),
                     subtitle: CustomText(
                       label: 'Germany',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
                   ),
@@ -240,14 +240,14 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                     ),
                     title: CustomText(
                       label: 'Email',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w500,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff000E08),
                     ),
                     subtitle: CustomText(
                       label: 'alexalexander@gmail.com',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
                   ),
@@ -258,14 +258,14 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                     ),
                     title: CustomText(
                       label: 'Phone Number',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w500,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff000E08),
                     ),
                     subtitle: CustomText(
                       label: '001 123 4567',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
                   ),
@@ -276,14 +276,14 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                     ),
                     title: CustomText(
                       label: 'Website',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w500,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff000E08),
                     ),
                     subtitle: CustomText(
                       label: 'Solvbox',
-                      size: 14,
+                      size: TextSize.small,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,color: Color(0xff9794AA),),
                   ),

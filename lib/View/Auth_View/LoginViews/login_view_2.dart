@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
-import 'package:team_work_project/Controller/textformfield/textform_field.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_3.dart';
 
 class LoginView2 extends StatefulWidget {
@@ -19,7 +18,7 @@ class _LoginView2State extends State<LoginView2> {
       appBar: AppBar(
         title: CustomText(
           label: 'Log into account',
-          size: 20.0,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
           color: Color(0xff000000),
@@ -34,18 +33,18 @@ class _LoginView2State extends State<LoginView2> {
               SizedBox(height: 60,),
               CustomText(
                 label: 'Welcome back!',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.roboto,
                 color: Color(0xff27252E),
               ),
-              CustomText(label: ' Lets continue', size: 16, weight: FontWeight.w400, fontType: GoogleFonts.roboto),
+              CustomText(label: ' Lets continue', size: TextSize.medium, weight: FontWeight.w400, fontType: GoogleFonts.roboto),
               SizedBox(height: 40,),
               BlueButtonWidget(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView3()));
               }, text: 'Continue with email'),
               SizedBox(height: 30,),
-              CustomText(label: 'or', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.roboto,color: Color(0xff605D67),),
+              CustomText(label: 'or', size: TextSize.medium, weight: FontWeight.w500, fontType: GoogleFonts.roboto,color: Color(0xff605D67),),
               SizedBox(height:30),
               GestureDetector(
                 onTap: () {},
@@ -135,12 +134,12 @@ class _LoginView2State extends State<LoginView2> {
               ),
               CustomText(
                   label: 'By using Solvbox, you agree to the',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.roboto),
               CustomText(
                   label: 'Terms and Privacy Policy.',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.roboto),
             ],
