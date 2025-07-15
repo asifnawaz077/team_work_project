@@ -114,6 +114,7 @@ class _ChatScreen2State extends State<ChatScreen2> {
           secondaryColor: Color(0xFFF2F2F2), // received message color
           receivedMessageBodyTextStyle: TextStyle(color: Colors.black),
         ),
+<<<<<<< Updated upstream
         // inputToolbarBuilder: (context, input) {
         //   return Row(
         //     children: [
@@ -132,6 +133,8 @@ class _ChatScreen2State extends State<ChatScreen2> {
         //     ],
         //   );
         // },
+=======
+>>>>>>> Stashed changes
       ),
     );
   }
