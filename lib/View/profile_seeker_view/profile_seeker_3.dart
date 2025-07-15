@@ -35,7 +35,11 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
             BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
             BottomNavigationBarItem(
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 label: 'SolvboxAI', icon: Icon(Icons.hourglass_empty_sharp)),
+=======
+                label: 'SolvboxAI', icon: Icon(Icons.lightbulb)),
+>>>>>>> Stashed changes
 =======
                 label: 'SolvboxAI', icon: Icon(Icons.lightbulb)),
 >>>>>>> Stashed changes
