@@ -58,14 +58,14 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
             children: [
               CustomText(
                 label: 'Alexander Scheer',
-                size: 14,
+                size: TextSize.medium,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.jost,
                 color: Color(0XFF544C4C),
               ),
               CustomText(
                 label: '@alexalex',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
                 color: Color(0xff544C4C),
@@ -78,12 +78,12 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                   ),
                   CustomText(
                       label: ' 4.5',
-                      size: 16,
+                      size: TextSize.medium,
                       weight: FontWeight.w600,
                       fontType: GoogleFonts.jost),
                   CustomText(
                     label: ' (28)',
-                    size: 10,
+                    size: TextSize.minismall,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                     color: Color(0xffC0C0C0),
@@ -104,7 +104,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
           ),
           CustomText(
             label: 'Businessman from Germany',
-            size: 16,
+            size: TextSize.medium,
             weight: FontWeight.w500,
             fontType: GoogleFonts.jost,
             color: Color(0xff003366),
@@ -126,7 +126,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                 'solving, process optimization, and strategic support, all\n'
                 'delivered with a focus on quality and results. Lets work\n'
                 'together to create impactful outcomes!',
-            size: 13,
+            size: TextSize.small,
             weight: FontWeight.w400,
             fontType: GoogleFonts.jost,
             color: Color(0xff544C4C),
@@ -147,14 +147,14 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
         children: [
           CustomText(
             label: 'User Details',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w400,
             fontType: GoogleFonts.jost,
             color: Color(0xffC0C0C0),
           ),
           CustomText(
             label: 'Reviews',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w600,
             fontType: GoogleFonts.jost,
             color: Color(0xff003366),
@@ -206,7 +206,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
               ),
               CustomText(
                 label: '21 Reviews',
-                size: 18,
+                size: TextSize.large,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
                 color: Color(0xff7A7A7A),
@@ -234,7 +234,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                     children: [
                       CustomText(
                           label: 'Ben Zirwes',
-                          size: 15,
+                          size: TextSize.medium,
                           weight: FontWeight.w500,
                           fontType: GoogleFonts.jost),
                       Spacer(),
@@ -264,7 +264,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                   Row(children: [
                     CustomText(
                       label: '4 days ago',
-                      size: 10,
+                      size: TextSize.minismall,
                       weight: FontWeight.w400,
                       fontType: GoogleFonts.jost,
                       color: Color(0xff414042),
@@ -274,7 +274,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                   CustomText(
                     label:
                         "Amazing experience! The team was friendly, prompt, and delivered beyond expectations. Will definitely return!",
-                    size: 12,
+                    size: TextSize.small,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                     color: Color(0xff7A7A7A),
@@ -302,7 +302,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                             children: [
                               CustomText(
                                   label: 'Meerbusch GmbH',
-                                  size: 15,
+                                  size: TextSize.medium,
                                   weight: FontWeight.w500,
                                   fontType: GoogleFonts.jost),
                               Spacer(),
@@ -332,7 +332,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                           Row(children: [
                             CustomText(
                               label: '9 days ago',
-                              size: 10,
+                              size: TextSize.minismall,
                               weight: FontWeight.w400,
                               fontType: GoogleFonts.jost,
                               color: Color(0xff414042),
@@ -342,7 +342,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                           CustomText(
                             label:
                             "Excellent service! Quick, efficient and very profession. Highly recommended for anyone seeking quality and reliability",
-                            size: 12,
+                            size: TextSize.small,
                             weight: FontWeight.w400,
                             fontType: GoogleFonts.jost,
                             color: Color(0xff7A7A7A),
@@ -370,7 +370,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                             children: [
                               CustomText(
                                   label: 'Jonas Glaubig',
-                                  size: 15,
+                                  size: TextSize.medium,
                                   weight: FontWeight.w500,
                                   fontType: GoogleFonts.jost),
                               Spacer(),
@@ -400,7 +400,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                           Row(children: [
                             CustomText(
                               label: '1 month ago',
-                              size: 10,
+                              size: TextSize.minismall,
                               weight: FontWeight.w400,
                               fontType: GoogleFonts.jost,
                               color: Color(0xff414042),
@@ -410,7 +410,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
                           CustomText(
                             label:
                             "Top-notch service with great attention  to detail. Everything was handled perfectly--couldnt ask for more!",
-                            size: 12,
+                            size: TextSize.small,
                             weight: FontWeight.w400,
                             fontType: GoogleFonts.jost,
                             color: Color(0xff7A7A7A),
