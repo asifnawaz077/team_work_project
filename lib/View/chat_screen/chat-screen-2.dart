@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
+import 'package:google_fonts/google_fonts.dart';
+import 'package:team_work_project/View/chat_screen/chat-screen-3.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_4.dart';
+
+import '../../Controller/text_comp/text_component.dart';
 
 class ChatScreen2 extends StatefulWidget {
   const ChatScreen2({super.key});
@@ -11,6 +15,7 @@ class ChatScreen2 extends StatefulWidget {
 }
 
 class _ChatScreen2State extends State<ChatScreen2> {
+  final TextEditingController _textController = TextEditingController();
   final _user = types.User(id: 'user1'); // current user
   List<types.Message> _messages = [];
 
@@ -89,9 +94,9 @@ class _ChatScreen2State extends State<ChatScreen2> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Tom Schneider", style: TextStyle(fontSize: 16)),
-                Text("Active now",
-                    style: TextStyle(fontSize: 12, color: Colors.green)),
+                CustomText(label: 'Tom Schneider', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+                CustomText(label: 'Active now', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
+
               ],
             ),
           ],
@@ -100,6 +105,7 @@ class _ChatScreen2State extends State<ChatScreen2> {
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 1,
       ),
+<<<<<<< HEAD
       body: Chat(
         messages: _messages,
         onSendPressed: _handleSendPressed,
@@ -136,6 +142,38 @@ class _ChatScreen2State extends State<ChatScreen2> {
 =======
 >>>>>>> Stashed changes
       ),
+=======
+      body:
+           Column(
+             children: [
+                 Expanded(
+                   child: Chat(
+                     messages: _messages,
+                     onSendPressed: _handleSendPressed,
+                     user: _user,
+
+                     showUserAvatars: true,
+                     showUserNames: true,
+                     onAttachmentPressed: () {},
+                     theme: DefaultChatTheme(
+
+                       inputBackgroundColor: Color(0xffFFFFFF),
+                       inputTextColor: Colors.black,
+                       sendButtonIcon:  Icon(Icons.send, color: Colors.blue),
+                       primaryColor:  Color(0xFF002DE3), // your sent message color
+                       secondaryColor:  Color(0xFFF2F2F2), // received message color
+                       receivedMessageBodyTextStyle:  TextStyle(color: Colors.black),
+                       attachmentButtonIcon: IconButton(onPressed: (){
+                         Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatScreen3()));
+                       }, icon: Icon(Icons.link,color: Colors.blue,))
+
+                     ),
+
+                                    ),
+                 ),
+             ],
+           ),
+>>>>>>> e93ec2416b6b765b0c8972398afe030589044d67
     );
   }
 }

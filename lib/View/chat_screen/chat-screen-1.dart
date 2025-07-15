@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+import 'package:team_work_project/View/chat_screen/chat-screen-2.dart';
 
 class ChatScreen1 extends StatefulWidget {
   const ChatScreen1({super.key});
@@ -307,14 +308,16 @@ class _ChatScreen1State extends State<ChatScreen1> {
               ),
               SizedBox(height: 13,),
               InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatScreen2()));
+                },
                 child: ListTile(
                   leading: CircleAvatar(
                     radius: 31,
                     backgroundImage: AssetImage('assets/person.jpg'),
                   ),
                   title: CustomText(
-                    label: 'To Schneider',
+                    label: 'Tom Schneider',
                     size: 16,
                     weight: FontWeight.w700,
                     fontType: GoogleFonts.jost,
