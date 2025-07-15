@@ -74,25 +74,23 @@ Future<void> _pickImageFromCamera()async{
 
               Padding(
                 padding: const EdgeInsets.only(left: 110),
-                child: CustomText(label: 'Share Content', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+                child: CustomText(label: 'Share Content', size: TextSize.medium, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
               ),
-
               SizedBox(height: 16),
-
               ListTile(
                 leading: IconButton(onPressed: _pickImageFromCamera, icon: Icon(Icons.camera_alt)),
-                title: CustomText(label: 'Camera', size: 14, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
+                title: CustomText(label: 'Camera', size: TextSize.small, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
               ),
 
               ListTile(
                 leading: IconButton(onPressed: _pickDocument, icon: Icon(Icons.dock)),
-                title: CustomText(label: 'Document', size: 14, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
-                subtitle: CustomText(label: 'Share your files', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
+                title: CustomText(label: 'Document', size: TextSize.small, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
+                subtitle: CustomText(label: 'Share your files', size: TextSize.minismall, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
               ),
               ListTile(
                 leading: IconButton(onPressed: _pickMediaFromGallery, icon: Icon(Icons.photo)),
-                title: CustomText(label: 'Media', size: 14, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
-                subtitle:CustomText(label: 'Share photos and videos', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
+                title: CustomText(label: 'Media', size: TextSize.small, weight: FontWeight.w500, fontType:   GoogleFonts.jost,color: Color(0xff000E08),),
+                subtitle:CustomText(label: 'Share photos and videos', size: TextSize.minismall, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
               ),
             ],
           ),
@@ -105,8 +103,8 @@ Future<void> _pickImageFromCamera()async{
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomText(label: 'Tom Schneider', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
-                CustomText(label: 'Active now', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),)
+                CustomText(label: 'Tom Schneider', size: TextSize.medium, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+                CustomText(label: 'Active now', size: TextSize.minismall, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),)
               ],
             ),
           ],
@@ -128,7 +126,7 @@ Future<void> _pickImageFromCamera()async{
                   borderRadius: BorderRadius.circular(15),
                   color: Color(0xff003366)
                 ),
-                child:  Center(child: CustomText(label: 'you did you job well', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xffFFFFFF),)),
+                child:  Center(child: CustomText(label: 'you did you job well', size: TextSize.minismall, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xffFFFFFF),)),
               ),
             ],
           ),
@@ -142,7 +140,7 @@ Future<void> _pickImageFromCamera()async{
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    CustomText(label: 'Tom Schneider', size: 16, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
+                    CustomText(label: 'Tom Schneider', size: TextSize.medium, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
                     Column(
                       children: [
                         SizedBox(width: 5,),
@@ -153,19 +151,16 @@ Future<void> _pickImageFromCamera()async{
                             border: Border.all(color: Colors.grey),
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child:  Center(child: CustomText(label: 'Have a great working week', size: 12, weight: FontWeight.w400, fontType: GoogleFonts.jost,)),
+                          child:  Center(child: CustomText(label: 'Have a great working week', size: TextSize.minismall, weight: FontWeight.w400, fontType: GoogleFonts.jost,)),
                         ),
-
                       ],
                     )
                   ],
                 ),
-
             ],
           ),
         ],
       ),
-
     );
   }
 }

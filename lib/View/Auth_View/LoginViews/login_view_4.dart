@@ -21,7 +21,7 @@ class _LoginView4State extends State<LoginView4> {
       appBar: AppBar(
         title: CustomText(
           label: 'Reset password',
-          size: 20.0,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
           color: Color(0xff000000),
@@ -34,14 +34,14 @@ class _LoginView4State extends State<LoginView4> {
             children: [
               CustomText(
                 label: 'We will email you',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.roboto,
                 color: Color(0xff27252E),
               ),
               CustomText(
                   label: 'a link to reset your passsword',
-                  size: 16,
+                  size: TextSize.medium,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.roboto),
               SizedBox(
@@ -50,7 +50,7 @@ class _LoginView4State extends State<LoginView4> {
               Row(
                 children: [
                   SizedBox(width: 20,),
-                  CustomText(label: 'Email', size: 16, weight: FontWeight.w400, fontType: GoogleFonts.jost),
+                  CustomText(label: 'Email', size: TextSize.medium, weight: FontWeight.w400, fontType: GoogleFonts.jost),
                 ],
               ),
               SizedBox(height: 5,),
@@ -67,12 +67,12 @@ class _LoginView4State extends State<LoginView4> {
               ),
               CustomText(
                   label: 'By using Solvbox, you agree to the',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.roboto),
               CustomText(
                   label: 'Terms and Privacy Policy.',
-                  size: 14,
+                  size: TextSize.small,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.roboto),
             ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_1.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_3.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_4.dart';
@@ -10,12 +11,24 @@ import 'package:team_work_project/View/Auth_View/Splash_View/Splash_View.dart';
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_2.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_1.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_2.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_1.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_2.dart';
+import 'package:team_work_project/View/profile_solvers_view/profile_solver_3.dart';
 
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(home: ProfileSolver1(),));
 }
-
+final GoRouter _router=GoRouter(routes: [
+  GoRoute(path: '/',
+  builder: (BuildContext context, GoRouterState state)=>ProfileSolver2(),
+    routes: [
+      GoRoute(path: '/profile2',
+      builder: (BuildContext context, GoRouterState state)=>ProfileSolver3(),
+      ),
+    ]
+  )
+]);
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -43,7 +56,7 @@ class MyApp extends StatelessWidget {
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: ProfileSeeker2()//LoginView1()//LoginView4()//LoginView3()//LoginView2()//SplashView()
+        home: ProfileSolver1()//LoginView1()//LoginView4()//LoginView3()//LoginView2()//SplashView()
      );
   }
 }
