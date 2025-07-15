@@ -73,14 +73,14 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
             children: [
               CustomText(
                 label: 'Alex Alexander',
-                size: 14,
+                size: TextSize.medium,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.jost,
                 color: Color(0XFF544C4C),
               ),
               CustomText(
                 label: '    @alexalex',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
                 color: Color(0xff544C4C),
@@ -96,14 +96,14 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
                   ),
                   CustomText(
                     label: ' 4.5',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost,
                     color: Color(0xff544C4C),
                   ),
                   CustomText(
                     label: ' (28)',
-                    size: 10,
+                    size: TextSize.small,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                     color: Color(0xffC0C0C0),
@@ -135,7 +135,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
               ),
               CustomText(
                 label: 'Message',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
                 color: Colors.white,
@@ -164,7 +164,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
                 ),
                 CustomText(
                   label: 'User Details',
-                  size: 14,
+                  size:TextSize.small,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.jost,
                   color: Colors.white,
@@ -188,7 +188,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
           ),
           CustomText(
             label: 'More liquidity through office automation',
-            size: 16,
+            size: TextSize.medium,
             weight: FontWeight.w500,
             fontType: GoogleFonts.jost,
             color: Color(0xff003366),
@@ -207,7 +207,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
               'solving, process optimization, and strategic support, all\n'
               'delivered with a focus on quality and results. Lets work\n'
               'together to create impactful outcomes!',
-          size: 14,
+          size: TextSize.small,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
           color: Color(0xff544C4C),
@@ -221,7 +221,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
         children: [
           CustomText(
             label: 'Videos',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w600,
             fontType: GoogleFonts.jost,
             color: Color(0xff003366),
@@ -232,7 +232,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
             },
             child: CustomText(
               label: 'Services',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w400,
               fontType: GoogleFonts.jost,
               color: Color(0xffC0C0C0),
@@ -240,14 +240,14 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
           ),
           CustomText(
             label: 'References',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w400,
             fontType: GoogleFonts.jost,
             color: Color(0xffC0C0C0),
           ),
           CustomText(
             label: 'Reviews',
-            size: 14,
+            size: TextSize.small,
             weight: FontWeight.w400,
             fontType: GoogleFonts.jost,
             color: Color(0xffC0C0C0),

@@ -14,7 +14,6 @@ import 'package:team_work_project/View/profile_seeker_view/profile_seeker_3.dart
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_4.dart';
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart ' as types;
-import 'package:team_work_project/View/profile_solvers_view/pf7.dart';
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_1.dart';
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_2.dart';
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_3.dart';
@@ -36,7 +35,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      home: ajay()//ChatSplash()//HomeView2()//SplashView(),
+      home: ProfileSolver1()//ChatSplash()//HomeView2()//SplashView(),
     );
   }
 }

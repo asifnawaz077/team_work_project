@@ -33,7 +33,7 @@ class CustomText extends StatelessWidget {
     if (isMobile) {
       switch (size) {
         case TextSize.small:
-          return 12;
+          return 14;
         case TextSize.medium:
           return 16;
         case TextSize.large:
