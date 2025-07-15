@@ -114,24 +114,24 @@ class _ChatScreen2State extends State<ChatScreen2> {
           secondaryColor: Color(0xFFF2F2F2), // received message color
           receivedMessageBodyTextStyle: TextStyle(color: Colors.black),
         ),
-        inputToolbarBuilder: (context, input) {
-          return Row(
-            children: [
-              IconButton(
-                icon: const Icon(Icons.link, color: Colors.blue),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ProfileSeeker4(),
-                    ),
-                  );
-                },
-              ),
-              Expanded(child: input),
-            ],
-          );
-        },
+        // inputToolbarBuilder: (context, input) {
+        //   return Row(
+        //     children: [
+        //       IconButton(
+        //         icon: const Icon(Icons.link, color: Colors.blue),
+        //         onPressed: () {
+        //           Navigator.push(
+        //             context,
+        //             MaterialPageRoute(
+        //               builder: (context) => ProfileSeeker4(),
+        //             ),
+        //           );
+        //         },
+        //       ),
+        //       Expanded(child: input),
+        //     ],
+        //   );
+        // },
       ),
     );
   }

@@ -9,6 +9,7 @@ import 'package:team_work_project/View/Home_View/BottomNavigationBar/Home_pages/
 
 import 'package:team_work_project/View/chat_screen/chat-screen-1.dart';
 import 'package:team_work_project/View/chat_screen/chat-screen-2.dart';
+import 'package:team_work_project/View/chat_screen/chat-screen-3.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_1.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_2.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_3.dart';
@@ -27,7 +28,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+<<<<<<< HEAD
       home: CustomBottomNav(),
+=======
+      home: ChatScreen3()//HomeView2()//SplashView(),
+>>>>>>> 152f675a31958c60468d98bec4f8cb02d8b2511a
     );
   }
 }
