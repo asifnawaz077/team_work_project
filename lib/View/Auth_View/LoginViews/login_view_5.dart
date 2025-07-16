@@ -59,7 +59,7 @@ class _LoginView5State extends State<LoginView5> {
             CustomText(
                 label: 'Terms and Privacy Policy.',
                 size: TextSize.small,
-                weight: FontWeight.w500,
+                weight: FontWeight.w600,
                 fontType: GoogleFonts.roboto),
           ],
         ),
