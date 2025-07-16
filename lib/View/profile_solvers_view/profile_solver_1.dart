@@ -91,7 +91,7 @@ class _ProfileSolver1State extends State<ProfileSolver1> {
                     width: 14,
                   ),
                   Icon(
-                    Icons.language,
+                    Icons.star,
                     color: Color(0xffFFE000),
                   ),
                   CustomText(
