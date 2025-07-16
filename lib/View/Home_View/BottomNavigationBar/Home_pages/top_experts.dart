@@ -100,7 +100,7 @@ class _TopExpertsState extends State<TopExperts> {
               padding: EdgeInsets.symmetric(horizontal: getWidth(context, 15)),
               child: CustomText(
                 label: 'Experts',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.jost,
               ),
@@ -126,7 +126,7 @@ class _TopExpertsState extends State<TopExperts> {
               padding: EdgeInsets.symmetric(horizontal: getWidth(context, 15)),
               child: CustomText(
                 label: 'Services',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.jost,
               ),

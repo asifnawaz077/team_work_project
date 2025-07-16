@@ -28,12 +28,12 @@ class SignupView5 extends StatelessWidget {
             ),
             CustomText(
                 label: 'Your account ',
-                size: 24,
+                size: TextSize.extralarge,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost),
             CustomText(
                 label: 'was successfully created! ',
-                size: 24,
+                size: TextSize.extralarge,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost),
             SizedBox(
@@ -50,13 +50,13 @@ class SignupView5 extends StatelessWidget {
             ),
             CustomText(
               label: 'By using Solvbox, you agree to the',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w600,
               fontType: GoogleFonts.roboto,
             ),
             CustomText(
               label: 'Terms and Privacy Policy.',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w600,
               fontType: GoogleFonts.roboto,
             ),

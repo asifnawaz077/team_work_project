@@ -28,14 +28,14 @@ class SignupView6 extends StatelessWidget {
             SizedBox(height: screenHeight * 0.02),
             CustomText(
               label: 'Protect your Legacy',
-              size: 17,
+              size: TextSize.large,
               weight: FontWeight.w700,
               fontType: GoogleFonts.jost,
             ),
             SizedBox(height: screenHeight * 0.10),
             CustomText(
               label: 'Welcome to Solvbox',
-              size: 28,
+              size: TextSize.extralarge,
               weight: FontWeight.w400,
               fontType: GoogleFonts.jost,
             ),
@@ -65,7 +65,7 @@ class SignupView6 extends StatelessWidget {
                   child: CustomText(
                     label: 'Continue as Problem Sseeker',
                     color: Colors.white,
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w600,
                     fontType: GoogleFonts.jost,
                   ),
@@ -79,7 +79,7 @@ class SignupView6 extends StatelessWidget {
               children: [
                 CustomText(
                   label: 'Already have an account?',
-                  size: 16,
+                  size: TextSize.extralarge,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.jost,
                 ),

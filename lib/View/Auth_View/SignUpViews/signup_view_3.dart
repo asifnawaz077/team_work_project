@@ -76,7 +76,7 @@ class _SignupView3State extends State<SignupView3> {
         ),
         title: CustomText(
           label: 'Verify your email 2 / 3',
-          size: 20,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
         ),
@@ -91,14 +91,14 @@ class _SignupView3State extends State<SignupView3> {
               Center(
                 child: CustomText(
                   label: 'We just sent 5-digit code to',
-                  size: 16,
+                  size: TextSize.medium,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.roboto,
                 ),
               ),
               CustomText(
                 label: 'alexalexander@gmail.com, enter it below:',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.roboto,
               ),
@@ -133,7 +133,7 @@ class _SignupView3State extends State<SignupView3> {
                 children: [
                   CustomText(
                     label: 'Wrong email?',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                   ),
@@ -152,13 +152,13 @@ class _SignupView3State extends State<SignupView3> {
               SizedBox(height: height * 0.28),
               CustomText(
                 label: 'By using Solvbox, you agree to the',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.roboto,
               ),
               CustomText(
                 label: 'Terms and Privacy Policy.',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.roboto,
               ),

@@ -3,6 +3,7 @@ import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/View/chat_screen/chat-screen-3.dart';
+import 'package:team_work_project/View/profile_seeker_view/profile_seeker_4.dart';
 
 import '../../Controller/text_comp/text_component.dart';
 
@@ -93,8 +94,20 @@ class _ChatScreen2State extends State<ChatScreen2> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomText(label: 'Tom Schneider', size: TextSize.medium, weight: FontWeight.w500, fontType: GoogleFonts.jost,color: Color(0xff000E08),),
-                CustomText(label: 'Active now', size: TextSize.minismall, weight: FontWeight.w400, fontType: GoogleFonts.jost,color: Color(0xff797C7B),),
+                CustomText(
+                  label: 'Tom Schneider',
+                  size: TextSize.medium,
+                  weight: FontWeight.w500,
+                  fontType: GoogleFonts.jost,
+                  color: Color(0xff000E08),
+                ),
+                CustomText(
+                  label: 'Active now',
+                  size: TextSize.minismall,
+                  weight: FontWeight.w400,
+                  fontType: GoogleFonts.jost,
+                  color: Color(0xff797C7B),
+                ),
               ],
             ),
           ],
@@ -103,33 +116,37 @@ class _ChatScreen2State extends State<ChatScreen2> {
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 1,
       ),
-
-      body:
-           Column(
-             children: [
-                 Expanded(
-                   child: Chat(
-                     messages: _messages,
-                     onSendPressed: _handleSendPressed,
-                     user: _user,
-                     showUserAvatars: true,
-                     showUserNames: true,
-                     onAttachmentPressed: () {},
-                     theme: DefaultChatTheme(
-                         inputBackgroundColor: Color(0xffFFFFFF),
-                       inputTextColor: Colors.black,
-                       sendButtonIcon:  Icon(Icons.send, color: Colors.blue),
-                       primaryColor:  Color(0xFF002DE3), // your sent message color
-                       secondaryColor:  Color(0xFFF2F2F2), // received message color
-                       receivedMessageBodyTextStyle:  TextStyle(color: Colors.black),
-                       attachmentButtonIcon: IconButton(onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatScreen3()));
-                       }, icon: Icon(Icons.link,color: Colors.blue,))
-
-                     ),
-                   ),),
-             ],
-           ),
+      body: Column(
+        children: [
+          Expanded(
+            child: Chat(
+              messages: _messages,
+              onSendPressed: _handleSendPressed,
+              user: _user,
+              showUserAvatars: true,
+              showUserNames: true,
+              onAttachmentPressed: () {},
+              theme: DefaultChatTheme(
+                inputBackgroundColor: Color(0xffFFFFFF),
+                inputTextColor: Colors.black,
+                sendButtonIcon: Icon(Icons.send, color: Colors.blue),
+                primaryColor: Color(0xFF002DE3), // your sent message color
+                secondaryColor: Color(0xFFF2F2F2), // received message color
+                receivedMessageBodyTextStyle: TextStyle(color: Colors.black),
+                attachmentButtonIcon: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ChatScreen3()),
+                    );
+                  },
+                  icon: Icon(Icons.link, color: Colors.blue),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

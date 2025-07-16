@@ -25,7 +25,7 @@ class SignupView2 extends StatelessWidget {
         ),
         title: CustomText(
           label: 'Add your email 1 / 3',
-          size: 20,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
         ),
@@ -41,7 +41,7 @@ class SignupView2 extends StatelessWidget {
                 children: [
                   CustomText(
                     label: 'Email',
-                    size: 16,
+                    size: TextSize.medium,
                     weight: FontWeight.w400,
                     fontType: GoogleFonts.jost,
                   ),
@@ -67,13 +67,13 @@ class SignupView2 extends StatelessWidget {
               SizedBox(height: height * 0.45),
               CustomText(
                 label: 'By using Solvbox, you agree to the',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.roboto,
               ),
               CustomText(
                 label: 'Terms and Privacy Policy.',
-                size: 14,
+                size: TextSize.small,
                 weight: FontWeight.w600,
                 fontType: GoogleFonts.roboto,
               ),

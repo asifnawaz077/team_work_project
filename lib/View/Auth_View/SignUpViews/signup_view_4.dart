@@ -41,7 +41,7 @@ class _SignupView4State extends State<SignupView4> {
         ),
         title: CustomText(
           label: 'Create your password 3 / 3',
-          size: 20,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
         ),
@@ -56,7 +56,7 @@ class _SignupView4State extends State<SignupView4> {
                 SizedBox(width: screenWidth * 0.04),
                 CustomText(
                   label: 'Password',
-                  size: 16,
+                  size: TextSize.medium,
                   weight: FontWeight.w400,
                   fontType: GoogleFonts.jost,
                 ),
@@ -129,13 +129,13 @@ class _SignupView4State extends State<SignupView4> {
             SizedBox(height: screenWidth * 0.5),
             CustomText(
               label: 'By using Solvbox, you agree to the',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w600,
               fontType: GoogleFonts.roboto,
             ),
             CustomText(
               label: 'Terms and Privacy Policy.',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w600,
               fontType: GoogleFonts.roboto,
             ),

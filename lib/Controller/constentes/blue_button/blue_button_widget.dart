@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/app_color/app_color.dart';
 
+// ignore: must_be_immutable
 class BlueButtonWidget extends StatelessWidget {
   String text;
   VoidCallback onPressed;

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
+
 import 'package:team_work_project/View/Auth_View/LoginViews/login_view_3.dart';
 
 class LoginView2 extends StatefulWidget {
@@ -25,12 +26,13 @@ class _LoginView2State extends State<LoginView2> {
         ),
         centerTitle: true,
       ),
-
       body: Center(
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 60,),
+              SizedBox(
+                height: 60,
+              ),
               CustomText(
                 label: 'Welcome back!',
                 size: TextSize.medium,
@@ -38,14 +40,31 @@ class _LoginView2State extends State<LoginView2> {
                 fontType: GoogleFonts.roboto,
                 color: Color(0xff27252E),
               ),
-              CustomText(label: ' Lets continue', size: TextSize.medium, weight: FontWeight.w400, fontType: GoogleFonts.roboto),
-              SizedBox(height: 40,),
-              BlueButtonWidget(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView3()));
-              }, text: 'Continue with email'),
-              SizedBox(height: 30,),
-              CustomText(label: 'or', size: TextSize.medium, weight: FontWeight.w500, fontType: GoogleFonts.roboto,color: Color(0xff605D67),),
-              SizedBox(height:30),
+              CustomText(
+                  label: ' Lets continue',
+                  size: TextSize.medium,
+                  weight: FontWeight.w400,
+                  fontType: GoogleFonts.roboto),
+              SizedBox(
+                height: 40,
+              ),
+              BlueButtonWidget(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginView3()));
+                  },
+                  text: 'Continue with email'),
+              SizedBox(
+                height: 30,
+              ),
+              CustomText(
+                label: 'or',
+                size: TextSize.medium,
+                weight: FontWeight.w500,
+                fontType: GoogleFonts.roboto,
+                color: Color(0xff605D67),
+              ),
+              SizedBox(height: 30),
               GestureDetector(
                 onTap: () {},
                 child: Container(
@@ -66,14 +85,17 @@ class _LoginView2State extends State<LoginView2> {
                       Text(
                         'Continue with apple',
                         style: GoogleFonts.jost(
-                          fontWeight: FontWeight.w500,
-                            fontSize: 14, color: Color(0xff3A383F)),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            color: Color(0xff3A383F)),
                       ),
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               GestureDetector(
                 onTap: () {},
                 child: Container(
@@ -94,14 +116,17 @@ class _LoginView2State extends State<LoginView2> {
                       Text(
                         'Continue with facebook',
                         style: GoogleFonts.jost(
-                          fontWeight: FontWeight.w500,
-                            fontSize: 14, color: Color(0xff3A383F)),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            color: Color(0xff3A383F)),
                       ),
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               GestureDetector(
                 onTap: () {},
                 child: Container(
@@ -122,8 +147,9 @@ class _LoginView2State extends State<LoginView2> {
                       Text(
                         'Continue with google',
                         style: GoogleFonts.jost(
-                          fontWeight: FontWeight.w500,
-                            fontSize: 14, color: Color(0xff3A383F)),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            color: Color(0xff3A383F)),
                       ),
                     ],
                   ),

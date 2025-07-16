@@ -16,7 +16,7 @@ class SignupView1 extends StatelessWidget {
       appBar: AppBar(
         title: CustomText(
           label: 'Create new account',
-          size: 20,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
         ),
@@ -29,7 +29,7 @@ class SignupView1 extends StatelessWidget {
             Center(
               child: CustomText(
                 label: 'Begin with creating new free account.',
-                size: 16,
+                size: TextSize.medium,
                 weight: FontWeight.w400,
                 fontType: GoogleFonts.jost,
               ),
@@ -45,7 +45,7 @@ class SignupView1 extends StatelessWidget {
             SizedBox(height: height * 0.025),
             CustomText(
               label: 'or',
-              size: 16,
+              size: TextSize.medium,
               weight: FontWeight.w600,
               fontType: GoogleFonts.roboto,
             ),
@@ -69,7 +69,7 @@ class SignupView1 extends StatelessWidget {
                       SizedBox(width: width * 0.03),
                       CustomText(
                         label: 'Continue with Apple',
-                        size: 14,
+                        size: TextSize.small,
                         weight: FontWeight.w500,
                         fontType: GoogleFonts.jost,
                       ),
@@ -98,7 +98,7 @@ class SignupView1 extends StatelessWidget {
                       SizedBox(width: width * 0.03),
                       CustomText(
                         label: 'Continue with Facebook',
-                        size: 14,
+                        size: TextSize.small,
                         weight: FontWeight.w500,
                         fontType: GoogleFonts.jost,
                       ),
@@ -127,7 +127,7 @@ class SignupView1 extends StatelessWidget {
                       SizedBox(width: width * 0.03),
                       CustomText(
                         label: 'Continue with Google',
-                        size: 14,
+                        size: TextSize.small,
                         weight: FontWeight.w500,
                         fontType: GoogleFonts.jost,
                       ),
@@ -139,13 +139,13 @@ class SignupView1 extends StatelessWidget {
             SizedBox(height: height * 0.15),
             CustomText(
               label: 'By using Solvbox, you agree to the',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w600,
               fontType: GoogleFonts.roboto,
             ),
             CustomText(
               label: 'Terms and Privacy Policy.',
-              size: 14,
+              size: TextSize.small,
               weight: FontWeight.w600,
               fontType: GoogleFonts.roboto,
             ),

@@ -36,7 +36,7 @@ class _HomeView1State extends State<HomeView1> {
             Center(
               child: CustomText(
                 label: 'How can we help?',
-                size: 20 * w,
+                size: TextSize.extralarge,
                 weight: FontWeight.w800,
                 fontType: GoogleFonts.jost,
               ),
@@ -57,7 +57,7 @@ class _HomeView1State extends State<HomeView1> {
                 onTap: () {},
                 child: CustomText(
                   label: 'Trending Solution',
-                  size: 16 * w,
+                  size: TextSize.medium,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.jost,
                 ),
@@ -112,7 +112,7 @@ class _HomeView1State extends State<HomeView1> {
                           Center(
                             child: CustomText(
                               label: titleList[index],
-                              size: 11 * w,
+                              size: TextSize.minismall,
                               weight: FontWeight.w600,
                               fontType: GoogleFonts.jost,
                             ),
@@ -135,7 +135,7 @@ class _HomeView1State extends State<HomeView1> {
                 },
                 child: CustomText(
                   label: 'Top Experts',
-                  size: 16 * w,
+                  size: TextSize.medium,
                   weight: FontWeight.w600,
                   fontType: GoogleFonts.jost,
                 ),
@@ -192,7 +192,7 @@ class _HomeView1State extends State<HomeView1> {
                           Center(
                             child: CustomText(
                               label: expertNames[index],
-                              size: 11 * w,
+                              size: TextSize.minismall,
                               weight: FontWeight.w600,
                               fontType: GoogleFonts.jost,
                             ),

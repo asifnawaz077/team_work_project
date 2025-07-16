@@ -27,7 +27,7 @@ class SignupView8 extends StatelessWidget {
         ),
         title: CustomText(
           label: 'Problem Seeker',
-          size: 20,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
         ),
@@ -89,7 +89,7 @@ class SignupView8 extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 5),
       child: CustomText(
         label: label,
-        size: 16,
+        size: TextSize.medium,
         weight: FontWeight.w400,
         fontType: GoogleFonts.jost,
       ),

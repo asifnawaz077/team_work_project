@@ -41,7 +41,7 @@ class _SplashViewState extends State<SplashView> {
                 padding: const EdgeInsets.only(top: 150),
                 child: CustomText(
                   label: 'Protect your Legacy',
-                  size: height * 0.025,
+                  size: TextSize.large,
                   weight: FontWeight.w800,
                   fontType: GoogleFonts.jost,
                 ),

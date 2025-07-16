@@ -7,7 +7,7 @@ import 'package:team_work_project/View/profile_seeker_view/profile_seeker_4.dart
 import '../../Controller/textformfield/textform_field.dart';
 
 class ProfileSeeker3 extends StatefulWidget {
-  ProfileSeeker3({
+  const ProfileSeeker3({
     super.key,
   });
 
@@ -34,9 +34,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
           items: [
             BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
             BottomNavigationBarItem(
-
-                label: 'Home', icon: Icon(Icons.hourglass_empty_sharp)),
-
+                label: 'SolvboxAI', icon: Icon(Icons.lightbulb)),
             BottomNavigationBarItem(label: 'Chats', icon: Icon(Icons.chat)),
             BottomNavigationBarItem(
                 label: 'LodeMo', icon: Icon(Icons.lightbulb_rounded)),
@@ -49,8 +47,8 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                           MaterialPageRoute(
                               builder: (context) => ProfileSeeker4()));
                     },
-                    child: Icon(Icons.perm_identity_rounded)),
-            )]),
+                    child: Icon(Icons.perm_identity_rounded))),
+          ]),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -151,6 +149,8 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                 ],
               ),
               SizedBox(height: 12),
+
+              // Step 2: Box jisme text likha hai
               Container(
                   height: 68,
                   width: 343,

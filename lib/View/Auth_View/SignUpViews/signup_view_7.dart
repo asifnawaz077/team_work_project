@@ -4,7 +4,6 @@ import 'package:team_work_project/Controller/constentes/blue_button/blue_button_
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
-import 'package:team_work_project/View/Home_View/BottomNavigationBar/Home_pages/top_experts.dart';
 
 class SignupView7 extends StatelessWidget {
   SignupView7({super.key});
@@ -25,7 +24,7 @@ class SignupView7 extends StatelessWidget {
         ),
         title: CustomText(
           label: 'Problem Solver',
-          size: 20,
+          size: TextSize.extralarge,
           weight: FontWeight.w400,
           fontType: GoogleFonts.jost,
         ),
@@ -84,7 +83,7 @@ class SignupView7 extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 5),
       child: CustomText(
         label: label,
-        size: 16,
+        size: TextSize.medium,
         weight: FontWeight.w400,
         fontType: GoogleFonts.jost,
       ),
