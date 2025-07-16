@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_2.dart';
 import 'package:team_work_project/View/profile_solvers_view/profile_solver_4.dart';
@@ -38,7 +39,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
           shape: CircleBorder(),
           backgroundColor: Color(0xff003366),
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSolver2()));
+            context.go('/ps3');
           },
           child: CircleAvatar(
             backgroundColor: Color(0xff003366),
@@ -229,7 +230,7 @@ class _ProfileSolver3State extends State<ProfileSolver3> {
           ),
           GestureDetector(
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSolver4()));
+              context.go('/pf4');
             },
             child: CustomText(
               label: 'References',

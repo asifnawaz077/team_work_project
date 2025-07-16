@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/app_color/app_color.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
@@ -122,8 +123,7 @@ class _SignupView3State extends State<SignupView3> {
               SizedBox(height: height * 0.03),
               BlueButtonWidget(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SignupView4()));
+                  context.go('/suv4');
                 },
                 text: 'Verify email',
               ),

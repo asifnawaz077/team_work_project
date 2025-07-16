@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
@@ -41,8 +42,7 @@ class SignupView5 extends StatelessWidget {
             ),
             BlueButtonWidget(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SignupView6()));
+                  context.go('/suv6');
                 },
                 text: 'Login'),
             SizedBox(

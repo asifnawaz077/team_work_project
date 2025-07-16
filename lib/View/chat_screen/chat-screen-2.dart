@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/View/chat_screen/chat-screen-3.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_4.dart';
@@ -135,10 +136,7 @@ class _ChatScreen2State extends State<ChatScreen2> {
                 receivedMessageBodyTextStyle: TextStyle(color: Colors.black),
                 attachmentButtonIcon: IconButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ChatScreen3()),
-                    );
+                    context.go('/cs3');
                   },
                   icon: Icon(Icons.link, color: Colors.blue),
                 ),

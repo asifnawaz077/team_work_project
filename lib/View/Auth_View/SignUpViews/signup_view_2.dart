@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
@@ -56,10 +57,7 @@ class SignupView2 extends StatelessWidget {
               Center(
                 child: BlueButtonWidget(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => SignupView3()),
-                    );
+                    context.go('/suv3');
                   },
                   text: 'Create an account',
                 ),

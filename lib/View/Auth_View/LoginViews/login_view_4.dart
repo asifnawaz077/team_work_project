@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
@@ -61,7 +62,7 @@ class _LoginView4State extends State<LoginView4> {
               SizedBox(
                 height: 25,
               ),
-              BlueButtonWidget(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView5()));}, text: 'Send'),
+              BlueButtonWidget(onPressed: () {context.go('/lv5');}, text: 'Send'),
               SizedBox(
                 height: 350,
               ),

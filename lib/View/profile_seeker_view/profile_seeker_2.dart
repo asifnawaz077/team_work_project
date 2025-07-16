@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_3.dart';
 
@@ -37,7 +38,7 @@ class _ProfileSeeker2State extends State<ProfileSeeker2> {
         shape: CircleBorder(),
         backgroundColor: Color(0xff003366),
         onPressed: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSeeker3()));
+          context.go('/ps3');
         },child: CircleAvatar(
         backgroundColor: Color(0xff003366),
         child: Icon(Icons.add,color: Colors.white,),

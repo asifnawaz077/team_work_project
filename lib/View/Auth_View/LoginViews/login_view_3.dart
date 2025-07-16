@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
@@ -70,7 +71,7 @@ class _LoginView3State extends State<LoginView3> {
               ),
               InkWell(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView4()));
+                  context.go('/lv4');
                 },
                 child: CustomText(
                     label: 'Forgot password?',

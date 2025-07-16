@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/icon_buttons/arrow_back_icon.dart';
@@ -122,8 +123,7 @@ class _SignupView4State extends State<SignupView4> {
             SizedBox(height: 20),
             BlueButtonWidget(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SignupView5()));
+                  context.go('/suv5');
                 },
                 text: 'Continue'),
             SizedBox(height: screenWidth * 0.5),

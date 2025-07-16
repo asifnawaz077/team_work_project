@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
@@ -37,8 +38,7 @@ class SignupView1 extends StatelessWidget {
             SizedBox(height: height * 0.04),
             BlueButtonWidget(
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SignupView2()));
+                context.go('/suv2');
               },
               text: 'Continue with email',
             ),

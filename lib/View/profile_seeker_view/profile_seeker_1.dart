@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/View/profile_seeker_view/profile_seeker_2.dart';
@@ -126,7 +127,7 @@ class _ProfileSeeker1State extends State<ProfileSeeker1> {
                   color: Color(0xff003366),
                 ),
                 InkWell(
-                    onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileSeeker2()));},
+                    onTap: () {context.go('/ps2');},
                     child: CustomText(
                       label: 'Reviews',
                       size: TextSize.small,

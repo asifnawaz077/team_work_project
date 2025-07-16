@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
@@ -42,10 +43,7 @@ class _ProfileSeeker3State extends State<ProfileSeeker3> {
                 label: 'Profile',
                 icon: InkWell(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ProfileSeeker4()));
+                      context.go('/ps4');
                     },
                     child: Icon(Icons.perm_identity_rounded))),
           ]),

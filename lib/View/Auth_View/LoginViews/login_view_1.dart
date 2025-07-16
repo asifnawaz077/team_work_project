@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/constentes/blue_button/blue_button_widget.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
@@ -71,7 +72,7 @@ class _LoginView1State extends State<LoginView1> {
                 fontType: GoogleFonts.jost,
               ),
                InkWell(
-                 onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginView2()));},
+                 onTap: (){context.go('/lv2');},
                  child: CustomText(
                     label: ' Log in',
                     size: TextSize.medium,

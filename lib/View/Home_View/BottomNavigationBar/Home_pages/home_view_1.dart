@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:team_work_project/Controller/text_comp/text_component.dart';
 import 'package:team_work_project/Controller/textformfield/textform_field.dart';
@@ -128,10 +129,7 @@ class _HomeView1State extends State<HomeView1> {
               padding: EdgeInsets.symmetric(horizontal: 16 * w),
               child: InkWell(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => TopExperts()),
-                  );
+                  context.go('/Te');
                 },
                 child: CustomText(
                   label: 'Top Experts',
