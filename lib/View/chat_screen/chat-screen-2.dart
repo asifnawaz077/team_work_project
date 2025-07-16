@@ -103,44 +103,7 @@ class _ChatScreen2State extends State<ChatScreen2> {
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 1,
       ),
-<<<<<<< HEAD
-      body: Chat(
-        messages: _messages,
-        onSendPressed: _handleSendPressed,
-        user: _user,
-        showUserAvatars: true,
-        showUserNames: true,
-        theme: const DefaultChatTheme(
-          inputBackgroundColor: Color(0xffFFFFFF),
-          inputTextColor: Colors.black,
-          sendButtonIcon: Icon(Icons.send, color: Colors.blue),
-          primaryColor: Color(0xFF002DE3), // your sent message color
-          secondaryColor: Color(0xFFF2F2F2), // received message color
-          receivedMessageBodyTextStyle: TextStyle(color: Colors.black),
-        ),
-<<<<<<< Updated upstream
-        // inputToolbarBuilder: (context, input) {
-        //   return Row(
-        //     children: [
-        //       IconButton(
-        //         icon: const Icon(Icons.link, color: Colors.blue),
-        //         onPressed: () {
-        //           Navigator.push(
-        //             context,
-        //             MaterialPageRoute(
-        //               builder: (context) => ProfileSeeker4(),
-        //             ),
-        //           );
-        //         },
-        //       ),
-        //       Expanded(child: input),
-        //     ],
-        //   );
-        // },
-=======
->>>>>>> Stashed changes
-      ),
-=======
+        
       body:
            Column(
              children: [
@@ -167,7 +130,6 @@ class _ChatScreen2State extends State<ChatScreen2> {
                    ),),
              ],
            ),
->>>>>>> e93ec2416b6b765b0c8972398afe030589044d67
     );
   }
 }
