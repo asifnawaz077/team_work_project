@@ -103,7 +103,7 @@ class _ChatScreen2State extends State<ChatScreen2> {
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 1,
       ),
-        
+
       body:
            Column(
              children: [
